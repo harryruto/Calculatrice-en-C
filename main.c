@@ -43,7 +43,7 @@ int main() {
                 result = division(nombre1, nombre2);
                 printf("%.2f : %.2f = %.2f\n", nombre1, nombre2, result);
             } else {
-                printf("Erreur : Division par z�ro impossible !\n");
+                printf("Erreur : Division par zero impossible !\n");
             }
             break;
         case 5:
