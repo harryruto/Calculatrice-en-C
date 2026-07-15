@@ -1,4 +1,4 @@
-### Calculator V1.3
+# Calculator V1.3
 
 ## Pour lancer le programme 
 - Telechargez le .exe
