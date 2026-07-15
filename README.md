@@ -1,8 +1,10 @@
-# Pour lancer le programme 
+### Calculator V1.3
+
+## Pour lancer le programme 
 - Telechargez le .exe
 - Lancer le
   
-## Ce programme contient : 
+### Ce programme contient : 
 
 - Les aires de figure (Carré, Rectangle et Triangle)
 - Les additions
@@ -11,6 +13,6 @@
 - Les multiplications
 - Les divisions
 
-### Pour télécharger uniquement les fichiers de la librairie math.h : 
+## Pour télécharger uniquement les fichiers de la librairie math.h : 
 
-- Allez sur **lien**
+- Allez sur **https://github.com/harryruto/Math-Librairy-for-C**
