@@ -1,8 +1,8 @@
 # Calculator V1.3
 
 ## Pour lancer le programme 
-- Telechargez le .exe
-- Lancer le
+- Telechargez la dernière releaser
+- Lancer le .exe
   
 ### Ce programme contient : 
 
