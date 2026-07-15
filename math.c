@@ -24,9 +24,9 @@ double puissance(double nombre1, double puissance) {
   double nombreDeDepart = nombre1;
   double puissanceActuelle = 0;
 
-  while(puissanceActuelle != puissance) {
-    nombre1 = nombre1 * nombreDeDepart;
+  while(puissanceActuelle != puissance - 1) {
     puissanceActuelle++;
-  }
+    nombre1 = nombre1 * nombreDeDepart;
+}
    return nombre1;
 }
