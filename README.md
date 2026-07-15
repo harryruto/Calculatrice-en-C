@@ -13,6 +13,6 @@
 - Les multiplications
 - Les divisions
 
-## Pour télécharger uniquement les fichiers de la librairie math.h : 
+## Pour télécharger les fichiers de la librairie math.h : 
 
 - Allez sur **https://github.com/harryruto/Math-Librairy-for-C**
