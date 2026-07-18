@@ -70,6 +70,8 @@ int main() {
             result = squareRoot(number1);
             if (result != -1) {
             printf("The square root of %.2f is %.2f\n", number1, result);
+            } else {
+            printf("This number does not have an integer as a square root\n\n");
             }
             break;
         default:
