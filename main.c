@@ -3,69 +3,77 @@
 #include "math.h"
 
 int main() {
-    int calcul = 0;
-    double nombre1 = 0, nombre2 = 0, result = 0;
+    int choice = 0;
+    double number1 = 0, number2 = 0, result = 0;
 
-    printf("-- Calculatrice --\n");
-    printf("Quel calcul voulez-vous effectuer ?\n");
+    printf("-- Calculator --\n");
+    printf("Which operation would you like to perform?\n");
     printf("- 1. Addition\n");
-    printf("- 2. Soustraction\n");
+    printf("- 2. Subtraction\n");
     printf("- 3. Multiplication\n");
     printf("- 4. Division\n");
-    printf("- 5. Carre\n");
-    printf("- 6. Puissance\n");
-    printf("- 7. Aire d'un carre / rectangle\n");
-    printf("- 8. Aire d'un triangle\n\n");
-    scanf("%d", &calcul);
+    printf("- 5. Square\n");
+    printf("- 6. Power\n");
+    printf("- 7. Area of a square / rectangle\n");
+    printf("- 8. Area of a triangle\n");
+    printf("- 9. Square root\n\n");
 
+    scanf("%d", &choice);
 
-    printf("Nombre 1:\n");
-    scanf("%lf", &nombre1);
-    if (calcul != 5) {
-        printf("Nombre 2:\n");
-        scanf("%lf", &nombre2);
+    printf("Number 1:\n");
+    scanf("%lf", &number1);
+
+    // For square (5) and square root (9), we only need one number
+    if (choice != 5 && choice != 9) {
+        printf("Number 2:\n");
+        scanf("%lf", &number2);
     }
 
-
-    switch(calcul) {
+    switch(choice) {
         case 1:
-            result = addition(nombre1, nombre2);
-            printf("%.2f + %.2f = %.2f\n", nombre1, nombre2, result);
+            result = addition(number1, number2);
+            printf("%.2f + %.2f = %.2f\n", number1, number2, result);
             break;
         case 2:
-            result = soustraction(nombre1, nombre2);
-            printf("%.2f - %.2f = %.2f\n", nombre1, nombre2, result);
+            result = subtraction(number1, number2);
+            printf("%.2f - %.2f = %.2f\n", number1, number2, result);
             break;
         case 3:
-            result = multiplication(nombre1, nombre2);
-            printf("%.2f x %.2f = %.2f\n", nombre1, nombre2, result);
+            result = multiplication(number1, number2);
+            printf("%.2f x %.2f = %.2f\n", number1, number2, result);
             break;
         case 4:
-            if (nombre2 != 0) {
-                result = division(nombre1, nombre2);
-                printf("%.2f : %.2f = %.2f\n", nombre1, nombre2, result);
+            if (number2 != 0) {
+                result = division(number1, number2);
+                printf("%.2f / %.2f = %.2f\n", number1, number2, result);
             } else {
-                printf("Erreur : Division par zero impossible !\n");
+                printf("Error: Division by zero is impossible!\n");
             }
             break;
         case 5:
-            result = carre(nombre1);
-            printf("Le carre de %.2f est %.2f\n", nombre1, result);
+            result = square(number1);
+            printf("The square of %.2f is %.2f\n", number1, result);
             break;
         case 6:
-            result = puissance(nombre1, nombre2);
-            printf("%.2f puissance %.2f = %.2f\n", nombre1, nombre2, result);
+            result = power(number1, number2);
+            printf("%.2f to the power of %.2f = %.2f\n", number1, number2, result);
             break;
         case 7:
-            result = aireCR(nombre1, nombre2);
-            printf("L'aire de cette figure est %.2f\n", result);
+            result = areaSR(number1, number2); // Area Square/Rectangle
+            printf("The area of this shape is %.2f\n", result);
             break;
         case 8:
-            result = aireT(nombre1, nombre2);
-            printf("L'aire de ce triangle est %.2f\n", result);
+            result = areaT(number1, number2); // Area Triangle
+            printf("The area of this triangle is %.2f\n", result);
+            break;
+        case 9:
+            result = squareRoot(number1);
+            if (result != -1) {
+            printf("The square root of %.2f is %.2f\n", number1, result);
+            }
             break;
         default:
-            printf("Choix invalide.\n");
+            printf("Invalid choice.\n");
             break;
     }
 
