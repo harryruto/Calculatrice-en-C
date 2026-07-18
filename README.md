@@ -1,19 +1,39 @@
-# Calculator V1.3
+# 🧮 Calculator V1.3
 
-## To launch the program 
-- Download the latest release
-- Launch the .exe
-  
-### This program contains: 
+A simple and efficient calculator application written in C, supporting basic arithmetic, powers, square roots, and geometric area calculations.
 
-- The areas of figure (Square, Rectangle, and Triangle)
-- The additions
-- The subtractions
-- The powers
-- The multiplications
-- The divisions
-- The square roots
+---
 
-## To download files from the math.h library: 
+## 🚀 How to Launch the Program
 
-- Go to [Math.h librairy github page](https://github.com/harryruto/Math-Librairy-for-C)
+1. Go to the **Releases** section of this repository.
+2. Download the latest release.
+3. Launch the `.exe` file on your computer.
+
+---
+
+## ✨ Features
+
+This program includes a variety of tools split into two main categories:
+
+### 📐 Geometry (Area Calculations)
+* **Square** (Area)
+* **Rectangle** (Area)
+* **Triangle** (Area)
+
+### 🧮 Mathematical Operations
+* **Basic Arithmetic:** Additions, subtractions, multiplications, divisions.
+* **Advanced Functions:** Powers, square roots.
+
+---
+
+---
+
+## 📦 Source Code Dependencies
+
+> 💡 **Note:** If you just want to run the `.exe` file, you don't need to download this. This library is only required if you want to look at, modify, or recompile the source code.
+
+* **Required Library:** Custom `math.h`
+* **Download Link:** You can find the source files on the [Math.h library GitHub page](https://github.com/harryruto/Math-Librairy-for-C).
+
+---
