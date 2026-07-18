@@ -14,6 +14,6 @@
 - The divisions
 - The square roots
 
-## To download files from the math library, h: 
+## To download files from the math.h library: 
 
-- Go to [Math.h librairy github page](**https://github.com/harryruto/Math-Librairy-for-C**)
+- Go to [Math.h librairy github page](https://github.com/harryruto/Math-Librairy-for-C)
