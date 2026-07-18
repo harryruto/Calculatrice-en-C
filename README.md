@@ -16,4 +16,4 @@
 
 ## To download files from the math library, h: 
 
-- Go to [math.h librairy](**https://github.com/harryruto/Math-Librairy-for-C**)
+- Go to [Math.h librairy github page](**https://github.com/harryruto/Math-Librairy-for-C**)
