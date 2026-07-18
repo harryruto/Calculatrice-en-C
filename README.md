@@ -1,18 +1,19 @@
 # Calculator V1.3
 
-## Pour lancer le programme 
-- Telechargez la dernière releaser
-- Lancer le .exe
+## To launch the program 
+- Download the latest release
+- Launch the .exe
   
-### Ce programme contient : 
+### This program contains: 
 
-- Les aires de figure (Carré, Rectangle et Triangle)
-- Les additions
-- Les soustractions
-- Les puissances
-- Les multiplications
-- Les divisions
+- The areas of figure (Square, Rectangle, and Triangle)
+- The additions
+- The subtractions
+- The powers
+- The multiplications
+- The divisions
+- The square roots
 
-## Pour télécharger les fichiers de la librairie math.h : 
+## To download files from the math library, h: 
 
-- Allez sur **https://github.com/harryruto/Math-Librairy-for-C**
+- Go to (math.h librairy)[**https://github.com/harryruto/Math-Librairy-for-C**]
