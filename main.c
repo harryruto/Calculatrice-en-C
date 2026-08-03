@@ -4,7 +4,7 @@
 
 int main() {
     int choice = 0;
-    double number1 = 0, number2 = 0, result = 0;
+    double number1 = 0, number2 = 0, type = 1, result = 0;
 
     printf("-- Calculator --\n");
     printf("Which operation would you like to perform?\n");
@@ -16,15 +16,28 @@ int main() {
     printf("- 6. Power\n");
     printf("- 7. Area of a square / rectangle\n");
     printf("- 8. Area of a triangle\n");
-    printf("- 9. Square root\n\n");
+    printf("- 9. Square root\n");
+    printf("- 10.Improvement or decrease\n\n");
 
     scanf("%d", &choice);
 
+    if (choice != 10) {
     printf("Number 1:\n");
     scanf("%lf", &number1);
+    }
 
-    if (choice != 5 && choice != 9) {
+    if (choice != 5 && choice != 9 && choice != 10) {
         printf("Number 2:\n");
+        scanf("%lf", &number2);
+    }
+    if (choice == 10) {
+        printf("Initial price (without the money symbol) :\n");
+         scanf("%lf", &number1);
+        printf("Do you want an increase or a decrease\n");
+        printf("1. Improvement\n");
+        printf("2. Decrease\n");
+        scanf("%lf", &type);
+        printf("Change (without the percent sign):\n");
         scanf("%lf", &number2);
     }
 
@@ -73,6 +86,16 @@ int main() {
                 printf("Error: Cannot calculate square root of a negative number\n\n");
             }
             break;
+        case 10:
+            result = mthppct(number1, type, number2);
+            if (type == 1) {
+                printf("After this improvement the new price is %.2f\n", result);
+            } if (type == 2) {
+                 printf("After this decrease the new price is %.2f\n", result);
+            } else {
+               printf("Invalid choice.\n");
+            }
+          break;
         default:
             printf("Invalid choice.\n");
             break;
