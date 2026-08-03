@@ -1,4 +1,4 @@
-# 🧮 Calculator V1.6
+# 🧮 Calculator V1.7
 
 A simple and efficient calculator application written in C, supporting basic arithmetic, powers, square roots, and geometric area calculations.
 
