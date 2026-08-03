@@ -23,7 +23,6 @@ int main() {
     printf("Number 1:\n");
     scanf("%lf", &number1);
 
-    // For square (5) and square root (9), we only need one number
     if (choice != 5 && choice != 9) {
         printf("Number 2:\n");
         scanf("%lf", &number2);
@@ -31,47 +30,47 @@ int main() {
 
     switch(choice) {
         case 1:
-            result = addition(number1, number2);
+            result = mthadd(number1, number2);
             printf("%.2f + %.2f = %.2f\n", number1, number2, result);
             break;
         case 2:
-            result = subtraction(number1, number2);
+            result = mthsub(number1, number2);
             printf("%.2f - %.2f = %.2f\n", number1, number2, result);
             break;
         case 3:
-            result = multiplication(number1, number2);
+            result = mthmult(number1, number2);
             printf("%.2f x %.2f = %.2f\n", number1, number2, result);
             break;
         case 4:
             if (number2 != 0) {
-                result = division(number1, number2);
+                result = mthdivd(number1, number2);
                 printf("%.2f / %.2f = %.2f\n", number1, number2, result);
             } else {
                 printf("Error: Division by zero is impossible!\n");
             }
             break;
         case 5:
-            result = square(number1);
+            result = mthsq(number1);
             printf("The square of %.2f is %.2f\n", number1, result);
             break;
         case 6:
-            result = power(number1, number2);
+            result = mthp(number1, number2);
             printf("%.2f to the power of %.2f = %.2f\n", number1, number2, result);
             break;
         case 7:
-            result = areaSR(number1, number2); // Area Square/Rectangle
+            result = mtharSR(number1, number2);
             printf("The area of this shape is %.2f\n", result);
             break;
         case 8:
-            result = areaT(number1, number2); // Area Triangle
+            result = mtharT(number1, number2);
             printf("The area of this triangle is %.2f\n", result);
             break;
         case 9:
-            result = squareRoot(number1);
+            result = mthsqr(number1);
             if (result != -1) {
-            printf("The square root of %.2f is %.2f\n", number1, result);
+                printf("The square root of %.2f is %.2f\n", number1, result);
             } else {
-            printf("This number does not have an integer as a square root\n\n");
+                printf("Error: Cannot calculate square root of a negative number\n\n");
             }
             break;
         default:
