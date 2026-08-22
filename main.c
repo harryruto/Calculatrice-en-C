@@ -99,7 +99,10 @@ int main() {
         default:
             printf("Invalid choice.\n");
             break;
-    }
+        }
+         FILE* fichier = fopen("log.logfile", "a+");
+      fprintf(fichier, "\n[LOG] Operation : %d - Result = %.2f", choice, result);
+      fclose(fichier);
 
     system("pause");
     return 0;
