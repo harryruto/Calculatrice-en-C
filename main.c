@@ -103,15 +103,15 @@ int main() {
           casser;
         défaut:
             printf("Choix invalide.\n");
-            résultat = EOf;
+            choix = EOF;
             casser;
         }
     FICHIER* fichier = ouvrir("log.logfile", "a+");
 
-        si (choix != 5 && choix != 9) {
+        si (choix != 5 && choix != 9 && choix != EOF && résultat != EOF) {
              fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : %.2f - Résultat = %.2f", choix, numéro1, numéro2, résultat);
-        } autre si (résultat == EOF) {
-             fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : NULL - Résultat = ERREUR", choix, numéro 1);
+        } autre si (résultat == EOF || choix == EOF) {
+             fprintf(plus rigide, "\n[LOG] Cette opération n'est pas valide -- ERREUR");
         } autre {
              fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : NULL - Résultat = %.2f", choix, numéro1, résultat);
         }
