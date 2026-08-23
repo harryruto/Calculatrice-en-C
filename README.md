@@ -1,39 +1,39 @@
-# 🧮 Calculator V1.7
+# 🧮 Calculatrice V1.9
 
-A simple and efficient calculator application written in C, supporting basic arithmetic, powers, square roots, and geometric area calculations.
-
----
-
-## 🚀 How to Launch the Program
-
-1. Go to the **Releases** section of this repository.
-2. Download the latest release.
-3. Launch the `.exe` file on your computer.
+Une application de calculatrice simple et efficace écrite en C, prenant en charge les calculs arithmétiques de base, les puissances, les racines carrées et les aires géométriques.
 
 ---
 
-## ✨ Features
+## 🚀 Commentaire lancer le programme
 
-This program includes a variety of tools split into two main categories:
+1. Aller à la **Communiqués** section de ce réelentiel.
+2. Téléchargez la dernière version.
+3. Lancez-le `.exe` fichier sur votre ordinateur.
 
-### 📐 Geometry (Area Calculations)
-* **Square** (Area)
-* **Rectangle** (Area)
-* **Triangle** (Area)
+---
 
-### 🧮 Mathematical Operations
-* **Basic Arithmetic:** Additions, subtractions, multiplications, divisions.
-* **Advanced Functions:** Powers, square roots.
+## ✨ Caractéristiques
+
+Ce programme comprend une variété d'outils répartis en deux catégories principales et un système de journaux > Fichier `fichier.logfile`:
+
+### 📐 Géométrie (calculs de surface)
+* **Carré** (Zone)
+* **Rectangle** (Zone)
+* **Triangle** (Zone)
+
+### 🧮 Opérations mathématiques
+* **Arithmétique de base :** Additions, abstractions, multiplications, divisions.
+* **Fonctions avancées :** Pouvoirs, racines carrées.
 
 ---
 
 ---
 
-## 📦 Source Code Dependencies
+## 📦 Dépendances du code source
 
-> 💡 **Note:** If you just want to run the `.exe` file, you don't need to download this. This library is only required if you want to look at, modify, or recompile the source code.
+> 💡 **Remarque :** Si vous voulez juste exécuter le `.exe` fichier, vous n'avez pas besoin de télécharger ceci. Cette bibliothèque n'est requise que si vous soutenez consulter, modificateur ou recompilateur le code source.
 
-* **Required Library:** Custom `math.h`
-* **Download Link:** You can find the source files on the [Math.h library GitHub page](https://github.com/harryruto/Math-Librairy-for-C).
+* **Bibliothèque requise :** Personnalisé `mathématiques.h`
+* **Lien de déchargement :** Vous pouvez trouver les fichers sources sur le [Page GitHub de la bibliothèque Math.h](https://github.com/harryruto/Math-Librairy-for-C).
 
 ---
