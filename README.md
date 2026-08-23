@@ -14,7 +14,7 @@ Une application de calculatrice simple et efficace écrite en C, prenant en char
 
 ## ✨ Caractéristiques
 
-Ce programme comprend une variété d'outils répartis en deux catégories principales et un système de journaux > Fichier `fichier.logfile`:
+Ce programme comprend une variété d'outils répartis en deux catégories principales et un système de journaux > Fichier `log.logfile`:
 
 ### 📐 Géométrie (calculs de surface)
 * **Carré** (Zone)
