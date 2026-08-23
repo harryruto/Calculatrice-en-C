@@ -28,15 +28,15 @@ int main() {
     scanf("%lf", &number1);
     }
 
-    si (choix != 5 && choix != 9 && choix != 10) {
-        printf("Numéro 2:\n");
-        scanf("%lf", &numéro2);
+    if (choice != 5 && choice != 9 && choice != 10) {
+        printf("Number 2:\n");
+        scanf("%lf", &number2);
     }
-    si (choix == 10) {
-        printf("Prix initial (sans le symbole monétaire) :\n");
-         scanf("%lf", &numéro1);
+    if (choice == 10) {
+        printf("Initial price (without the money symbol) :\n");
+         scanf("%lf", &number1);
         printf("Voulez-vous une augmentation ou une diminution\n");
-        printf("1. Alioration\n");
+        printf("1. Amélioration\n");
         printf("2. Diminuer\n");
         scanf("%lf", &type);
         printf(« Changement (sans le signe de pourcentage) :\n");
@@ -47,68 +47,75 @@ int main() {
         cas 1:
             résultat = mthadd(numéro1, numéro2);
             printf("%.2f + %.2f = %.2f\n", numéro1, numéro2, résultat);
-            cocotte;
+            casser;
         cas 2:
             résultat = mthsub(numéro1, numéro2);
             printf("%.2f - %.2f = %.2f\n", numéro1, numéro2, résultat);
-            cocotte;
+            casser;
         cas 3:
             résultat = mthmult(numéro1, numéro2);
             printf("%.2f x %.2f = %.2f\n", numéro1, numéro2, résultat);
-            cocotte;
+            casser;
         cas 4:
             si (numéro2 != 0) {
                 résultat = mthdivd(numéro1, numéro2);
                 printf("%.2f / %.2f = %.2f\n", numéro1, numéro2, résultat);
             } autre {
                 printf(« Erreur : la division par zéro est impossible !\n");
+                résultat = EOF;
             }
-            cocotte;
+            casser;
         cas 5:
             résultat = mthsq(numéro 1);
             printf("Le carré de %.2f est %.2f\n", numéro1, résultat);
-            cocotte;
+            casser;
         cas 6:
             résultat = mthp(numéro1, numéro2);
             printf("%.2f à la puissance %.2f = %.2f\n", numéro1, numéro2, résultat);
-            cocotte;
+            casser;
         cas 7:
             résultat = mtharSR(numéro1, numéro2);
             printf("La surface de cette forme est de %.2f\n", résultat);
-            cocotte;
+            casser;
         cas 8:
             résultat = mtharT(numéro1, numéro2);
             printf("L'aire de ce triangle est de %.2f\n", résultat);
-            cocotte;
+            casser;
         cas 9:
             résultat = mthsqr(numéro 1);
             si (résultat != -1) {
-                printf("Le parcours carrière de %.2f est %.2f\n", numéro1, résultat);
+                printf("La racine carrée de %.2f est %.2f\n", numéro1, résultat);
             } autre {
                 printf(« Erreur : impossible de calculer la racine carrée d'un nombre négatif\n\n");
+                résultat = EOF;
             }
-            cocotte;
+            casser;
         cas 10:
             résultat = mthppct(numéro1, type, numéro2);
             si (type == 1) {
                 printf("Après cette amélioration, le nouveau prix est de %.2f\n", résultat);
             } si (type == 2) {
-                 printf("Après cette bête, le nouveau prix est de %.2f\n", résultat);
+                 printf("Après cette baisse, le nouveau prix est de %.2f\n", résultat);
             } autre {
                printf("Choix invalide.\n");
+               résultat = EOF;
             }
-          cocotte;
+          casser;
         défaut:
             printf("Choix invalide.\n");
-            cocotte;
+            résultat = EOf;
+            casser;
         }
-         PLUS FICHE* plus fiche = ouvrir("log.logfile", "a+");
+    FICHIER* fichier = ouvrir("log.logfile", "a+");
+
         si (choix != 5 && choix != 9) {
-      fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : %.2f - Résultat = %.2f", choix, numéro1, numéro2, résultat);
+             fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : %.2f - Résultat = %.2f", choix, numéro1, numéro2, résultat);
+        } autre si (résultat == EOF) {
+             fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : NULL - Résultat = ERREUR", choix, numéro 1);
         } autre {
-        fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : NULL - Résultat = %.2f", choix, numéro1, résultat);
+             fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : NULL - Résultat = %.2f", choix, numéro1, résultat);
         }
-      fclose(plus sommaire);
+    fclose(plus sommaire);
 
      printf(« Voulez-vous faire une autre opération ?\n");
      printf("1. Oui\n");
