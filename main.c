@@ -120,11 +120,11 @@ int main() {
         }
     fclose(fichier);
      } else {
-            printf("Log file uncharged");
+            printf("Log file uncharged\n");
         if (error != NULL) {
-            fprintf(error, "Log file uncharged");
+            fprintf(error, "Log file uncharged\n");
         } else {
-         printf("Error file uncharged");
+         printf("\n[ERROR]Error file uncharged");
         }
      }
 
@@ -134,5 +134,6 @@ int main() {
      scanf("%d", &makeOperation);
    }
     system("pause");
+    fclose(error);
     return 0;
 }
