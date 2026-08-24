@@ -1,129 +1,138 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "mathématiques.h"
-#define ERREUR (2.22507e-308)
+#include "math.h"
+#define ERROR (2.22507e-308)
 
-int principal() {
-    int choix = 0, makeOpération = 1;
-    double nombre1 = 0, numéro2 = 0, type = 1, résultat = 0;
+int main() {
+    int choice = 0, makeOperation = 1;
+    double number1 = 0, number2 = 0, type = 1, result = 0;
+
+    FILE* error = fopen("error.logfile", "a+");
 
 
-   pendentif que (makeOperation == 1 ) {
-    printf("-- Calculatrice --\n");
-    printf(« Quelle opération sudaitez-vous réalisateur ?\n");
-    printf("- 1. Ajout\n");
-    printf("- 2. Soustraction\n");
+   while (makeOperation == 1 ) {
+    printf("-- Calculator --\n");
+    printf("Which operation would you like to perform?\n");
+    printf("- 1. Addition\n");
+    printf("- 2. Subtraction\n");
     printf("- 3. Multiplication\n");
     printf("- 4. Division\n");
-    printf("- 5. Carré\n");
-    printf("- 6. Puissance\n");
-    printf("- 7. Aire d'un carré / rectangle\n");
-    printf("- 8. Triangle d'Aire d'un\n");
-    printf("- 9. Racine Carrée\n");
-    printf("- 10.Alioration ou diminution\n\n");
+    printf("- 5. Square\n");
+    printf("- 6. Power\n");
+    printf("- 7. Area of a square / rectangle\n");
+    printf("- 8. Area of a triangle\n");
+    printf("- 9. Square root\n");
+    printf("- 10.Improvement or decrease\n\n");
 
-    scanf("%d", &choix);
+    scanf("%d", &choice);
 
-    si (choix != 10) {
-    printf("Numéro 1 :\n");
-    scanf("%lf", &numéro1);
+    if (choice != 10) {
+    printf("Number 1:\n");
+    scanf("%lf", &number1);
     }
 
-    si (choix != 5 && choix != 9 && choix != 10) {
-        printf("Numéro 2 :\n");
-        scanf("%lf", &numéro2);
+    if (choice != 5 && choice != 9 && choice != 10) {
+        printf("Number 2:\n");
+        scanf("%lf", &number2);
     }
-    si (choix == 10) {
-        printf("Prix initial (sans le symbole monétaire) :\n");
-         scanf("%lf", &numéro1);
-        printf("Voulez-vous une augmentation ou une diminution\n");
-        printf("1. Alioration\n");
-        printf("2. Diminuer\n");
+    if (choice == 10) {
+        printf("Initial price (without the money symbol) :\n");
+         scanf("%lf", &number1);
+        printf("Do you want an increase or a decrease\n");
+        printf("1. Improvement\n");
+        printf("2. Decrease\n");
         scanf("%lf", &type);
-        printf(« Changement (sans le signe de pourcentage) :\n");
-        scanf("%lf", &numéro2);
+        printf("Change (without the percent sign):\n");
+        scanf("%lf", &number2);
     }
 
-    interrupteur(choix) {
-        cas 1:
-            résultat = mthadd(numéro1, numéro2);
-            printf("%.2f + %.2f = %.2f\n", numéro1, numéro2, résultat);
-            cocotte;
-        cas 2:
-            résultat = mthsub(numéro1, numéro2);
-            printf("%.2f - %.2f = %.2f\n", numéro1, numéro2, résultat);
-            cocotte;
-        cas 3:
-            résultat = mthmult(numéro1, numéro2);
-            printf("%.2f x %.2f = %.2f\n", numéro1, numéro2, résultat);
-            cocotte;
-        cas 4:
-            si (numéro2 != 0) {
-                résultat = mthdivd(numéro1, numéro2);
-                printf("%.2f / %.2f = %.2f\n", numéro1, numéro2, résultat);
-            } autre {
-                printf(« Erreur : la division par zéro est impossible !\n");
-                résultat = ERREUR;
+    switch(choice) {
+        case 1:
+            result = mthadd(number1, number2);
+            printf("%.2f + %.2f = %.2f\n", number1, number2, result);
+            break;
+        case 2:
+            result = mthsub(number1, number2);
+            printf("%.2f - %.2f = %.2f\n", number1, number2, result);
+            break;
+        case 3:
+            result = mthmult(number1, number2);
+            printf("%.2f x %.2f = %.2f\n", number1, number2, result);
+            break;
+        case 4:
+            if (number2 != 0) {
+                result = mthdivd(number1, number2);
+                printf("%.2f / %.2f = %.2f\n", number1, number2, result);
+            } else {
+                printf("Error: Division by zero is impossible!\n");
+                result = ERROR;
             }
-            cocotte;
-        cas 5:
-            résultat = mthsq(numéro 1);
-            printf("Le carré de %.2f est %.2f\n", numéro1, résultat);
-            cocotte;
-        cas 6:
-            résultat = mthp(numéro1, numéro2);
-            printf("%.2f à la puissance %.2f = %.2f\n", numéro1, numéro2, résultat);
-            cocotte;
-        cas 7:
-            résultat = mtharSR(numéro1, numéro2);
-            printf("La surface de cette forme est de %.2f\n", résultat);
-            cocotte;
-        cas 8:
-            résultat = mtharT(numéro1, numéro2);
-            printf("L'aire de ce triangle est de %.2f\n", résultat);
-            cocotte;
-        cas 9:
-            résultat = mthsqr(numéro 1);
-            si (résultat != -1) {
-                printf("Le parcours carrière de %.2f est %.2f\n", numéro1, résultat);
-            } autre {
-                printf(« Erreur : impossible de calculer la racine carrée d'un nombre négatif\n\n");
-                résultat = ERREUR;
+            break;
+        case 5:
+            result = mthsq(number1);
+            printf("The square of %.2f is %.2f\n", number1, result);
+            break;
+        case 6:
+            result = mthp(number1, number2);
+            printf("%.2f to the power of %.2f = %.2f\n", number1, number2, result);
+            break;
+        case 7:
+            result = mtharSR(number1, number2);
+            printf("The area of this shape is %.2f\n", result);
+            break;
+        case 8:
+            result = mtharT(number1, number2);
+            printf("The area of this triangle is %.2f\n", result);
+            break;
+        case 9:
+            result = mthsqr(number1);
+            if (result != -1) {
+                printf("The square root of %.2f is %.2f\n", number1, result);
+            } else {
+                printf("Error: Cannot calculate square root of a negative number\n\n");
+                result = ERROR;
             }
-            cocotte;
-        cas 10:
-            résultat = mthppct(numéro1, type, numéro2);
-            si (type == 1) {
-                printf("Après cette amélioration, le nouveau prix est de %.2f\n", résultat);
-            } autre si (type == 2) {
-                 printf("Après cette bête, le nouveau prix est de %.2f\n", résultat);
-            } autre {
-               printf("Choix invalide.\n");
-               résultat = ERREUR;
+            break;
+        case 10:
+            result = mthppct(number1, type, number2);
+            if (type == 1) {
+                printf("After this improvement the new price is %.2f\n", result);
+            } else if (type == 2) {
+                 printf("After this decrease the new price is %.2f\n", result);
+            } else {
+               printf("Invalid choice.\n");
+               result = ERROR;
             }
-          cocotte;
-        défaut:
-            printf("Choix invalide.\n");
-            choix = ERREUR;
-            cocotte;
+          break;
+        default:
+            printf("Invalid choice.\n");
+            choice = ERROR;
+            break;
         }
-    PLUS FICHE* plus fiche = ouvrir("log.logfile", "a+");
-si (fichier != NUL) {
-        si (choix != 5 && choix != 9 && choix != ERREUR && résultat != ERREUR) {
-             fprintf(plus rigide, "\n[JOURNAL] Opération : %d - Numéro 1 : %.2f - Numéro 2 : %.2f - Résultat = %.2f", choix, numéro1, numéro2, résultat);
-        } autre si (résultat == ERREUR || choix == ERREUR) {
-             fprintf(plus rigide, "\n[LOG] Opération non valide");
-        } autre {
-             fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : NULL - Résultat = %.2f", choix, numéro1, résultat);
+    FILE* fichier = fopen("log.logfile", "a+");
+    if (fichier != NULL) {
+        if (choice != 5 && choice != 9 && choice != ERROR && result != ERROR) {
+             fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : %.2f - Result = %.2f", choice, number1, number2, result);
+        } else if (result == ERROR || choice == ERROR) {
+             fprintf(fichier, "\n[LOG] Invalid operation");
+        } else {
+             fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f", choice, number1, result);
         }
-    fclose(plus sommaire);
-}
+    fclose(fichier);
+     } else {
+            printf("Log file uncharged");
+        if (error != NULL) {
+            fprintf(error, "Log file uncharged");
+        } else {
+         printf("Error file uncharged");
+        }
+     }
 
-     printf(« Voulez-vous faire une autre opération ?\n");
-     printf("1. Oui\n");
-     printf("2. Non\n\n");
-     scanf("%d", &makeOpération);
+     printf("Do you want to make another operation ?\n");
+     printf("1. Yes\n");
+     printf("2. No\n\n");
+     scanf("%d", &makeOperation);
    }
-    système("pause");
-    retour 0;
+    system("pause");
+    return 0;
 }
