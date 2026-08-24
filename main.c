@@ -76,64 +76,63 @@ int main() {
             result = mthp(number1, number2);
             printf("%.2f to the power of %.2f = %.2f\n", number1, number2, result);
             break;
-        case 7:
-            result = mtharSR(number1, number2);
-            printf("The area of this shape is %.2f\n", result);
-            break;
-        case 8:
-            result = mtharT(number1, number2);
-            printf("The area of this triangle is %.2f\n", result);
-            break;
-        case 9:
-            result = mthsqr(number1);
-            if (result != -1) {
-                printf("The square root of %.2f is %.2f\n", number1, result);
-            } else {
-                printf("Error: Cannot calculate square root of a negative number\n\n");
-                result = ERROR;
+        cas 7:
+            résultat = mtharSR(numéro1, numéro2);
+            printf("La surface de cette forme est de %.2f\n", résultat);
+            casser;
+        cas 8:
+            résultat = mtharT(numéro1, numéro2);
+            printf("L'aire de ce triangle est de %.2f\n", résultat);
+            casser;
+        cas 9:
+            résultat = mthsqr(numéro 1);
+            si (résultat != -1) {
+                printf("La racine carrée de %.2f est %.2f\n", numéro1, résultat);
+            } autre {
+                printf(« Erreur : impossible de calculer la racine carrée d'un nombre négatif\n\n");
+                résultat = ERREUR;
             }
-            break;
-        case 10:
-            result = mthppct(number1, type, number2);
-            if (type == 1) {
-                printf("After this improvement the new price is %.2f\n", result);
-            } else if (type == 2) {
-                 printf("After this decrease the new price is %.2f\n", result);
-            } else {
-               printf("Invalid choice.\n");
-               result = ERROR;
+            casser;
+        cas 10:
+            résultat = mthppct(numéro1, type, numéro2);
+            si (type == 1) {
+                printf("Après cette amélioration, le nouveau prix est de %.2f\n", résultat);
+            } autre si (type == 2) {
+                 printf("Après cette baisse, le nouveau prix est de %.2f\n", résultat);
+            } autre {
+               printf("Choix invalide.\n");
+               résultat = ERREUR;
             }
-          break;
-        default:
-            printf("Invalid choice.\n");
-            choice = ERROR;
-            break;
+          casser;
+        défaut:
+            printf("Choix invalide.\n");
+            choix = ERREUR;
+            casser;
         }
-    FILE* fichier = fopen("log.logfile", "a+");
-    if (fichier != NULL) {
-        if (choice != 5 && choice != 9 && choice != ERROR && result != ERROR) {
-             fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : %.2f - Result = %.2f", choice, number1, number2, result);
-        } else if (result == ERROR || choice == ERROR) {
-             fprintf(fichier, "\n[LOG] Invalid operation");
-        } else {
-             fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f", choice, number1, result);
+    FICHIER* fichier = ouvrir("log.logfile", "a+");
+    si (fichier != NUL) {
+        si (choix != 5 && choix != 9 && choix != ERREUR && résultat != ERREUR) {
+             fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : %.2f - Résultat = %.2f", choix, numéro1, numéro2, résultat);
+        } autre si (résultat == ERREUR || choix == ERREUR) {
+             fprintf(plus rigide, "\n[LOG] Opération non valide");
+        } autre {
+             fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : NULL - Résultat = %.2f", choix, numéro1, résultat);
         }
-    fclose(fichier);
-     } else {
-            printf("Log file uncharged\n");
-        if (error != NULL) {
-            fprintf(error, "Log file uncharged\n");
-        } else {
-         printf("\n[ERROR]Error file uncharged");
+    fclose(plus sommaire);
+     } autre {
+            printf("Fichier journal non chargé\n");
+        si (erreur != NUL) {
+            fprintf(erreur, "Fichier journal non chargé\n");
+        } autre {
+         printf("\n[ERREUR]Fichier d'erreur non chargé");
         }
      }
 
-     printf("Do you want to make another operation ?\n");
-     printf("1. Yes\n");
-     printf("2. No\n\n");
-     scanf("%d", &makeOperation);
+     printf(« Voulez-vous faire une autre opération ?\n");
+     printf("1. Oui\n");
+     printf("2. Non\n\n");
+     scanf("%d", &makeOpération);
    }
-    system("pause");
-    fclose(error);
-    return 0;
+    fclose(erreur);
+    retour 0;
 }
