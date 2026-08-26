@@ -249,7 +249,7 @@ int main() {
                 }
                 fclose(plus sommaire);
             } autre {
-                printf("Fichier de log non chargé\n");
+                printf("Fichier de log non payant\n");
                 si (erreur != NUL) {
                     fprintf(erreur, "Fichier journal non chargé\n");
                 } autre {
