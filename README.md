@@ -8,7 +8,7 @@ Une application de calculatrice simple et efficace écrite en C, prenant en char
 
 1. Aller à la **Communiqués** section de ce réelentiel.
 2. Téléchargez la dernière version.
-3. Lancez-le `.exe` fichier sur votre ordinateur.
+3. Lancez le  fichier `.exe` sur votre ordinateur.
 
 ---
 
@@ -24,16 +24,19 @@ Ce programme comprend une variété d'outils répartis en deux catégories princ
 ### 🧮 Opérations mathématiques
 * **Arithmétique de base :** Additions, abstractions, multiplications, divisions.
 * **Fonctions avancées :** Pouvoirs, racines carrées.
+* **Augmentation / Diminution (Prix)**
 
 ---
-
+## Prochaines MàJ
+* Aucune MàJ de prévue
+  > N'hésitez pas à proposer vos idée dans les `pulls requests`
 ---
 
 ## 📦 Dépendances du code source
 
 > 💡 **Remarque :** Si vous voulez juste exécuter le `.exe` fichier, vous n'avez pas besoin de télécharger ceci. Cette bibliothèque n'est requise que si vous soutenez consulter, modificateur ou recompilateur le code source.
 
-* **Bibliothèque requise :** Personnalisé `mathématiques.h`
+* **Bibliothèque requise :** Personnalisé `math.h`
 * **Lien de déchargement :** Vous pouvez trouver les fichers sources sur le [Page GitHub de la bibliothèque Math.h](https://github.com/harryruto/Math-Librairy-for-C).
 
 ---
