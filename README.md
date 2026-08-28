@@ -34,7 +34,7 @@ Ce programme comprend une variété d'outils répartis en deux catégories princ
 
 ## 📦 Dépendances du code source
 
-  > 💡 **Remarque :** Si vous voulez juste exécuter le fichier `.exe`, vous n'avez pas besoin de télécharger ceci. Cette bibliothèque n'est requise que si vous soutenez consulter, modificateur ou recompilateur le code source.
+  > 💡 **Remarque :** Si vous voulez juste exécuter le fichier `.exe`, vous n'avez pas besoin de télécharger ceci. Cette bibliothèque n'est requise que si vous soutenez consulter, modificateur ou recompiler le code source.
 
 * **Bibliothèque requise :** Personnalisé `math.h`
 * **Lien de déchargement :** Vous pouvez trouver les fichers sources sur le [Page GitHub de la bibliothèque Math.h](https://github.com/harryruto/Math-Librairy-for-C).
