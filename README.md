@@ -4,7 +4,7 @@ Une application de calculatrice simple et efficace écrite en C, prenant en char
 
 ---
 
-## 🚀 Commentaire lancer le programme
+## 🚀 Comment lancer le programme
 
 1. Aller à la **Communiqués** section de ce réelentiel.
 2. Téléchargez la dernière version.
@@ -29,7 +29,7 @@ Ce programme comprend une variété d'outils répartis en deux catégories princ
 ---
 ## Prochaines MàJ
 * Aucune MàJ de prévue
-  > N'hésitez pas à proposer vos idée dans les `pulls requests`
+  > N'hésitez pas à proposer vos idée dans les `Pulls requests`
 ---
 
 ## 📦 Dépendances du code source
