@@ -1,6 +1,6 @@
-# 🧮 Calculatrice / Calculator V1.9
+# 🧮 Calculatrice / Calculatrice V2.0.2
 
-[Français](#-français) | [English](#-english)
+[Français](#-français) | [Anglais](#-anglais)
 
 ---
 
@@ -8,15 +8,15 @@
 
 Une application de calculatrice simple et efficace écrite en C, prenant en charge les calculs arithmétiques de base, les puissances, les racines carrées et les aires géométriques.
 
-### 🚀 Comment lancer le programme
+### 🚀 Commentaire lancer le programme
 
-1. Allez dans la section **Releases** (Communiqués) de ce dépôt.
+1. Allez dans la section **Communiqués** (Communiqués) de ce dépôt.
 2. Téléchargez la dernière version.
 3. Lancez le fichier `.exe` sur votre ordinateur.
 
 ### ✨ Fonctionnalités
 
-Ce programme comprend une variété d'outils répartis en deux catégories principales, accompagnés d'un système de journalisation (logs -> Fichier `log.logfile`) :
+Ce programme comprend une variété d'outils référencés en deux catégories principales, accompagnés d'un système de journalisation (logs -> Fichier `journal de Fichier.log`) :
 
 #### 📐 Géométrie (calculs d'aire)
 * **Carré** (Aire)
@@ -32,30 +32,30 @@ Ce programme comprend une variété d'outils répartis en deux catégories princ
 
 ### 🔮 Prochaines MàJ
 * Aucune MàJ de prévue.
-  > N'hésitez pas à proposer vos idées dans les *Pull requests*.
+  > N'hésitez pas à proposer vos idées dans les *Demandes d'extraction*.
 
 ---
 
 ### 📦 Dépendances du code source
 
-> 💡 **Remarque :** Si vous voulez juste exécuter le fichier `.exe`, vous n'avez pas besoin de télécharger ceci. Cette bibliothèque n'est requise que si vous souhaitez consulter, modifier ou recompiler le code source.
+> 💡 **Remarque :** Si vous voulez juste exécuter le fichier `.exe`, vous n'avez pas suroin de télécharger ceci. Cette bibliothèque n'est requise que si vous soutenez consulter, modificateur ou recompilateur le code source.
 
-* **Bibliothèque requise :** `math.h` personnalisée
-* **Lien de téléchargement :** Vous pouvez trouver les fichiers sources sur la [Page GitHub de la bibliothèque Math.h](https://github.com/harryruto/Math-Librairy-for-C).
+* **Bibliothèque requise :** `mathématiques.h` personnalisation
+* **Lien de déchargement :** Vous pouvez trouver les fichers sources sur la [Page GitHub de la bibliothèque Math.h](https://github.com/harryruto/Math-Librairy-for-C).
 
 ---
 
-## 🇬🇧 English
+## 🇬🇧 Anglais
 
-A simple and efficient calculator application written in C, supporting basic arithmetic calculations, powers, square roots, and geometric areas.
+Une application de calculatrice simple et efficace écrite en C, prenant en charge les calculs arithmétiques de base, les puissances, les racines carrées et les aires géométriques.
 
-### 🚀 How to Run the Program
+### 🚀 Commentaire exécutif le programme
 
-1. Go to the **Releases** section of this repository.
-2. Download the latest release.
-3. Run the `.exe` file on your computer.
+1. Aller à la **Communiqués** section de ce réelentiel.
+2. Téléchargez la dernière version.
+3. Exécutez le `.exe` fichier sur votre ordinateur.
 
-### ✨ Features
+### ✨ Caractéristiques
 
 This program includes a variety of tools divided into two main categories, along with a logging system -> File `log.logfile`:
 
