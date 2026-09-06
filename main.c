@@ -121,7 +121,7 @@ int main() {
                     break;
                 case 11:
                     result = mthpct(number1, number2);
-                    printf("%.2f % of %.2f = %.2f", number2, number1, result);
+                    printf("%.2f percents of %.2f = %.2f\n", number2, number1, result);
                     break;
                 default:
                     color(12, 0);
@@ -142,10 +142,10 @@ int main() {
                 fclose(fichier);
             } else {
                 color(12, 0);
-                printf("Log file uncharged\n");
+                printf("[ERROR]Log file uncharged\n");
                 color(15, 0);
                 if (error != NULL) {
-                    fprintf(error, "Log file uncharged\n");
+                    fprintf(error, "[ERROR] Log file uncharged\n");
                 } else {
                     color(12, 0);
                     printf("\n[ERROR]Error file uncharged");
@@ -159,6 +159,7 @@ int main() {
             scanf("%d", &makeOperation);
         }
         printf("Press enter to exit");
+
     } else if (language == 2) {
         while (makeOperation == 1) {
             printf("-- Calculatrice --\n");
@@ -249,65 +250,66 @@ int main() {
                     }
                     break;
                 case 10:
-                    résultat = mthppct(numéro1, type, numéro2);
-                    si (type == 1) {
-                        printf("Apres cette augmentation, le nouveau prix est de %.2f\n", résultat);
-                    } autre si (type == 2) {
-                        printf("Apres cette diminution, le nouveau prix est de %.2f\n", résultat);
-                    } autre {
-                        couleur(12, 0);
+                    result = mthppct(number1, type, number2);
+                    if (type == 1) {
+                        printf("Apres cette augmentation, le nouveau prix est de %.2f\n", result);
+                    } else if (type == 2) {
+                        printf("Apres cette diminution, le nouveau prix est de %.2f\n", result);
+                    } else {
+                        color(12, 0);
                         printf("Choix invalide.\n");
-                        résultat = ERREUR;
-                        couleur(15, 0);
+                        result = ERROR;
+                        color(15, 0);
                     }
-                    casser;
-                cas 11:
-                    mthpct(langue, numéro 2);
-                    casser;
-                défaut:
-                    couleur(12, 0);
+                    break;
+                case 11:
+                    result = mthpct(number1, number2);
+                    printf("%.2f pourcents de %.2f = %.2f\n", number2, number1, result);
+                    break;
+                default:
+                    color(12, 0);
                     printf("Choix invalide.\n");
-                    choix = ERREUR;
-                     couleur(15, 0);
-                    casser;
+                    choice = ERROR;
+                     color(15, 0);
+                    break;
             }
-            FICHIER* fichier = ouvrir("log.logfile", "a+");
-            si (fichier != NUL) {
-                si (choix != 5 && choix != 9 && choix != ERREUR && résultat != ERREUR) {
-                    fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : %.2f - Résultat = %.2f", choix, numéro1, numéro2, résultat);
-                } autre si (résultat == ERREUR || choix == ERREUR) {
-                    fprintf(plus rigide, "\n[LOG] Opération non valide");
-                } autre {
-                    fprintf(plus rigide, "\n[LOG] Opération : %d - Numéro 1 : %.2f - Numéro 2 : NULL - Résultat = %.2f", choix, numéro1, résultat);
+            FILE* fichier = fopen("log.logfile", "a+");
+            if (fichier != NULL) {
+                if (choice != 5 && choice != 9 && choice != ERROR && result != ERROR) {
+                    fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : %.2f - Result = %.2f", choice, number1, number2, result);
+                } else if (result == ERROR || choice == ERROR) {
+                    fprintf(fichier, "\n[LOG] Invalid operation");
+                } else {
+                    fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f", choice, number1, result);
                 }
-                fclose(plus sommaire);
-            } autre {
-                couleur(12, 0);
-                printf("Fichier de log non payant\n");
-                couleur(15, 0);
-                si (erreur != NUL) {
-                    fprintf(erreur, "Fichier journal non chargé\n");
-                } autre {
-                    couleur(12, 0);
+                fclose(fichier);
+            } else {
+                color(12, 0);
+                printf("Fichier de log non charge\n");
+                color(15, 0);
+                if (error != NULL) {
+                    fprintf(error, "[ERROR] Log file uncharged\n");
+                } else {
+                    color(12, 0);
                     printf("\n[ERREUR] Fichier d'erreur non chargé");
-                    couleur(15, 0);
+                    color(15, 0);
                 }
             }
 
-            printf("Souhaitez-vous effectuer une autre opération ?\n");
+            printf("Souhaitez-vous effectuer une autre operation ?\n");
             printf("1. Oui\n");
             printf("2. Non\n\n");
-            scanf("%d", &makeOpération);
+            scanf("%d", &makeOperation);
         }
-        printf("Appuyez sur Entrée pour quitter");
-    } autre {
-        couleur(12, 0);
-        printf("Choix invalide / Choix invalide\n");
-        couleur(15, 0);
+        printf("Appuyez sur Entree pour quitter");
+    } else {
+        color(12, 0);
+        printf("Choix invalide / Invalid choice\n");
+        color(15, 0);
     }
 
-    fclose(erreur);
-    retour 0;
+    fclose(error);
+    return 0;
 }
 
 
