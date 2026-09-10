@@ -31,7 +31,8 @@ int main() {
             printf("- 8. Area of a triangle\n");
             printf("- 9. Square root\n");
             printf("- 10.Improvement or decrease\n");
-            printf("- 11. Percetage\n\n");
+            printf("- 11. Percetage\n");
+            printf("- 12. Pythagorus Theorem\n\n");
 
             scanf("%d", &choice);
 
@@ -123,6 +124,10 @@ int main() {
                     result = mthpct(number1, number2);
                     printf("%.2f percents of %.2f = %.2f\n", number2, number1, result);
                     break;
+                case 12:
+                    result = mthpytTh(number1, number2);
+                    printf("The hypotenuse of this triangle is %.2f\n", result);
+                    break;
                 default:
                     color(12, 0);
                     printf("Invalid choice.\n");
@@ -174,7 +179,8 @@ int main() {
             printf("- 8. Aire d'un triangle\n");
             printf("- 9. Racine carree\n");
             printf("- 10. Augmentation ou diminution\n");
-            printf("- 11. Pourcentage\n\n");
+            printf("- 11. Pourcentage\n");
+            printf("- 12. Theoreme de Pythagore\n\n");
 
             scanf("%d", &choice);
 
@@ -266,6 +272,10 @@ int main() {
                     result = mthpct(number1, number2);
                     printf("%.2f pourcents de %.2f = %.2f\n", number2, number1, result);
                     break;
+                case 12:
+                    result = mthpytTh(number1, number2);
+                    printf("L'hypotenuse de ce triangle est %.2f\n", result);
+                    break;
                 default:
                     color(12, 0);
                     printf("Choix invalide.\n");
@@ -302,12 +312,12 @@ int main() {
             scanf("%d", &makeOperation);
         }
         printf("Appuyez sur Entree pour quitter");
+
     } else {
         color(12, 0);
         printf("Choix invalide / Invalid choice\n");
         color(15, 0);
     }
-
     fclose(error);
     return 0;
 }
