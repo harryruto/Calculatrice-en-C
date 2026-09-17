@@ -142,7 +142,7 @@ Pour les informations complémentaires, veuillez consulter notamment :
 * `README.md` — présentation du projet
 * `CODE_OF_CONDUCT.md` — code de conduite
 * `CONTRIBUTING.md` — règles de contribution
-* `BUG_REPORTING.md` — procédure de signalement des bugs
+* `BUG_REPORT.md` — procédure de signalement des bugs
 * `CREDITS.md` — crédits du projet
 
 ---
@@ -299,7 +299,7 @@ For additional information, please consult:
 * `README.md` — project overview
 * `CODE_OF_CONDUCT.md` — code of conduct
 * `CONTRIBUTING.md` — contribution guidelines
-* `BUG_REPORTING.md` — bug reporting procedure
+* `BUG_REPORT.md` — bug reporting procedure
 * `CREDITS.md` — project credits
 
 ---
