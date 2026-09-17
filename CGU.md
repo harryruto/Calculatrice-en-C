@@ -4,40 +4,7 @@
 
 * **Version :** 3.0
 * **Date de publication initiale :** 10 septembre 2026
-* **Dernière modification des CGU:** 17 septembre 2026
-
----
-
-## HISTORIQUE DES MODIFICATIONS
-
-### Modification 2026-01
-
-**Date : 17 septembre 2026**
-
-* Ajout d’un système d’identification des modifications des présentes CGU.
-* Ajout de l’explication du format de numérotation des modifications.
-* Ajout d’un historique permettant d’identifier les changements apportés aux CGU au fil du temps.
-
-### Système de numérotation
-
-Chaque modification apportée aux présentes Conditions Générales d’Utilisation reçoit un numéro suivant le format :
-
-**Modification YYYY-NN**
-
-où :
-
-* **YYYY** correspond à l’année durant laquelle la modification est effectuée ;
-* **NN** correspond au numéro de la modification effectuée durant cette année.
-
-Par exemple :
-
-* **Modification 2026-01** = première modification effectuée en 2026 ;
-* **Modification 2026-02** = deuxième modification effectuée en 2026 ;
-* **Modification 2027-01** = première modification effectuée en 2027.
-
-Le compteur des modifications est réinitialisé à **01 au début de chaque année**.
-
-La date indiquée sous chaque modification correspond à la date à laquelle la modification est publiée dans les présentes CGU.
+* **Dernière modification des CGU :** 17 septembre 2026
 
 ---
 
@@ -45,9 +12,9 @@ La date indiquée sous chaque modification correspond à la date à laquelle la 
 
 ## 1. Objet
 
-Les présentes Conditions Générales d’Utilisation définissent les conditions d’utilisation du logiciel **Calculator**, une application console développée en langage C.
+Les présentes Conditions Générales d’Utilisation (CGU) définissent les conditions applicables à l’utilisation du logiciel **Calculator**, une application console développée en langage C.
 
-Calculator permet notamment d’effectuer des opérations mathématiques telles que :
+Calculator permet notamment d’effectuer différentes opérations mathématiques :
 
 * Addition
 * Soustraction
@@ -58,58 +25,98 @@ Calculator permet notamment d’effectuer des opérations mathématiques telles 
 * Calcul d’aires
 * Racine carrée
 * Augmentation ou diminution en pourcentage
-* Pourcentage
+* Calcul de pourcentages
 * Théorème de Pythagore
 
-Le logiciel propose également une interface en français et en anglais.
+Le logiciel propose une interface en français et en anglais.
 
-## 2. Acceptation des conditions
+## 2. Acceptation des CGU
 
-En utilisant Calculator, l’utilisateur reconnaît avoir pris connaissance des présentes conditions et accepte de les respecter.
+L’utilisation du logiciel Calculator implique que l’utilisateur a pris connaissance des présentes CGU et accepte de les respecter.
 
-Si l’utilisateur n’accepte pas ces conditions, il doit cesser d’utiliser le logiciel.
+Si l’utilisateur n’accepte pas les présentes CGU, il doit cesser d’utiliser le logiciel.
 
 ## 3. Utilisation du logiciel
 
-Calculator est fourni à des fins de calcul et d’apprentissage.
+Calculator est destiné à effectuer des calculs mathématiques et peut également être utilisé à des fins d’apprentissage ou de test.
 
-L’utilisateur est responsable de l’utilisation qu’il fait des résultats produits par le logiciel.
+L’utilisateur est responsable de l’utilisation qu’il fait du logiciel et des résultats obtenus.
 
-Les résultats doivent être vérifiés lorsque leur exactitude est importante, notamment dans un contexte scolaire, professionnel, scientifique ou financier.
+Les résultats produits par Calculator doivent être vérifiés lorsque leur exactitude est importante, notamment dans un contexte scolaire, professionnel, scientifique ou financier.
 
-## 4. Limitation de responsabilité
+## 4. Fonctionnement et erreurs
 
-Calculator est fourni **« en l’état »**, sans garantie concernant son fonctionnement dans tous les environnements ou pour tous les usages.
+Le logiciel comporte des contrôles permettant de gérer certaines opérations mathématiques invalides.
 
-L’auteur et Queris Studio ne peuvent être tenus responsables des conséquences résultant d’une utilisation incorrecte du logiciel ou d’une interprétation erronée de ses résultats.
+Par exemple, Calculator détecte notamment :
+
+* les divisions par zéro ;
+* le calcul de la racine carrée d’un nombre négatif ;
+* certains choix d’opérations invalides.
+
+Une erreur ou une limitation du logiciel peut toutefois survenir dans certaines situations.
+
+L’absence de message d’erreur ne garantit pas que le résultat obtenu est adapté à un usage particulier.
 
 ## 5. Fichiers de journalisation
 
-Le logiciel peut créer ou utiliser des fichiers locaux de journalisation afin d’enregistrer certaines opérations et erreurs rencontrées pendant son fonctionnement.
+Calculator peut créer ou utiliser des fichiers locaux de journalisation pendant son fonctionnement.
 
-Ces fichiers peuvent notamment inclure des informations relatives aux opérations effectuées et aux résultats calculés.
+Ces fichiers peuvent notamment enregistrer :
 
-L’utilisateur est responsable de la conservation et de la gestion de ces fichiers.
+* certaines opérations effectuées ;
+* les nombres utilisés ;
+* les résultats calculés ;
+* certaines erreurs rencontrées par le logiciel.
 
-## 6. Erreurs de calcul
+L’utilisateur est responsable de la conservation, de la suppression et de la gestion de ces fichiers.
 
-Le logiciel contient des contrôles pour certaines situations mathématiques invalides, notamment la division par zéro et le calcul d’une racine carrée d’un nombre négatif.
+## 6. Limitation de responsabilité
 
-Toutefois, l’absence d’erreur signalée ne constitue pas une garantie que le résultat est adapté à un usage particulier.
+Calculator est fourni **« en l’état »**, sans garantie que le logiciel fonctionnera sans erreur dans tous les environnements ou pour tous les usages.
+
+L’auteur et Queris Studio ne peuvent être tenus responsables des conséquences résultant notamment :
+
+* d’une mauvaise utilisation du logiciel ;
+* d’une mauvaise interprétation d’un résultat ;
+* d’une erreur de saisie de l’utilisateur ;
+* de l’utilisation d’un résultat sans vérification préalable ;
+* d’un dysfonctionnement du logiciel.
+
+Pour toute utilisation nécessitant une précision particulière, les résultats doivent être vérifiés avec une autre méthode ou un outil approprié.
 
 ## 7. Propriété intellectuelle
 
-Le logiciel, son code source, ses éléments graphiques éventuels, sa documentation et ses éléments associés restent soumis aux droits de leurs auteurs et contributeurs respectifs.
+Le logiciel Calculator, son code source, sa documentation et les éléments qui lui sont associés sont protégés par les droits applicables à leurs auteurs et contributeurs respectifs.
 
-Aucune cession de droits de propriété intellectuelle n’est accordée par la simple utilisation du logiciel.
+Sauf autorisation expresse, l’utilisateur ne peut pas présenter le logiciel ou ses composants comme étant sa propre création.
 
-## 8. Modifications
+Les droits accordés à l’utilisateur sont limités à ceux expressément prévus par la licence applicable au projet.
 
-Queris Studio se réserve le droit de modifier, améliorer ou interrompre le développement du logiciel.
+## 8. Modifications des CGU
 
-Les présentes conditions peuvent également être mises à jour afin de refléter les évolutions du projet.
+Queris Studio peut modifier les présentes CGU afin de tenir compte de l’évolution du logiciel, de ses fonctionnalités ou de son fonctionnement.
 
-Toute modification des présentes CGU est ajoutée à l’**Historique des modifications** et reçoit un identifiant au format **Modification YYYY-NN**, conformément au système défini au début du présent document.
+Lorsqu’une règle est ajoutée ou modifiée, un identifiant de modification peut être placé **directement au-dessus de la règle ou du passage concerné**.
+
+Le format utilisé est :
+
+**Modification YYYY-NN**
+
+où :
+
+* **YYYY** correspond à l’année de la modification ;
+* **NN** correspond au numéro de la modification effectuée cette année-là.
+
+Par exemple :
+
+* `Modification 2026-01` = première modification de 2026 ;
+* `Modification 2026-02` = deuxième modification de 2026 ;
+* `Modification 2027-01` = première modification de 2027.
+
+Le compteur recommence à **01 au début de chaque année**.
+
+La date indiquée sous le numéro correspond à la date de publication de la modification.
 
 ## 9. Support et contact
 
@@ -120,7 +127,9 @@ Pour obtenir de l’aide, signaler un problème ou contacter l’équipe du proj
 
 ## 10. Acceptation
 
-L’utilisation de Calculator implique l’acceptation des présentes Conditions Générales d’Utilisation.
+L’utilisation de Calculator constitue une acceptation des présentes Conditions Générales d’Utilisation.
+
+Si une modification des CGU est publiée, l’utilisateur est invité à consulter la version mise à jour avant de poursuivre l’utilisation du logiciel.
 
 ---
 
@@ -128,9 +137,9 @@ L’utilisation de Calculator implique l’acceptation des présentes Conditions
 
 ## 1. Purpose
 
-These Terms of Use define the conditions for using **Calculator**, a console application developed in C.
+These Terms of Use (ToU) define the conditions applicable to the use of **Calculator**, a console application developed in C.
 
-Calculator can perform mathematical operations including:
+Calculator can perform various mathematical operations, including:
 
 * Addition
 * Subtraction
@@ -144,55 +153,95 @@ Calculator can perform mathematical operations including:
 * Percentage calculations
 * Pythagorean theorem
 
-The software also provides English and French interfaces.
+The software provides both French and English interfaces.
 
 ## 2. Acceptance of the Terms
 
-By using Calculator, the user acknowledges having read these Terms of Use and agrees to comply with them.
+Using Calculator means that the user has read these Terms of Use and agrees to comply with them.
 
-If the user does not agree with these terms, they must stop using the software.
+If the user does not agree with these Terms of Use, they must stop using the software.
 
 ## 3. Software Usage
 
-Calculator is provided for calculation and educational purposes.
+Calculator is intended to perform mathematical calculations and may also be used for educational or testing purposes.
 
-The user is responsible for how they use the results produced by the software.
+The user is responsible for how they use the software and its results.
 
-Results should be independently verified whenever accuracy is important, including in educational, professional, scientific or financial contexts.
+Results produced by Calculator should be verified whenever accuracy is important, including in educational, professional, scientific or financial contexts.
 
-## 4. Limitation of Liability
+## 4. Operation and Errors
 
-Calculator is provided **“as is”**, without any guarantee that it will operate correctly in every environment or for every possible use.
+The software includes checks for certain invalid mathematical operations.
 
-The author and Queris Studio shall not be held responsible for consequences resulting from incorrect use of the software or incorrect interpretation of its results.
+For example, Calculator can detect:
+
+* division by zero;
+* calculating the square root of a negative number;
+* certain invalid operation choices.
+
+However, errors or software limitations may still occur in certain situations.
+
+The absence of an error message does not guarantee that a result is suitable for a particular purpose.
 
 ## 5. Logging Files
 
-The software may create or use local log files to record certain operations and errors occurring during its execution.
+Calculator may create or use local log files during its operation.
 
-These files may contain information relating to performed operations and calculated results.
+These files may record:
 
-The user is responsible for managing and retaining these files.
+* certain operations performed;
+* numbers entered by the user;
+* calculated results;
+* certain errors encountered by the software.
 
-## 6. Calculation Errors
+The user is responsible for the storage, deletion and management of these files.
 
-The software includes checks for certain invalid mathematical situations, including division by zero and calculating the square root of a negative number.
+## 6. Limitation of Liability
 
-However, the absence of an error message does not guarantee that a result is suitable for a particular purpose.
+Calculator is provided **“as is”**, without any guarantee that the software will operate without errors in every environment or for every possible use.
+
+The author and Queris Studio shall not be held responsible for consequences resulting from, including but not limited to:
+
+* improper use of the software;
+* incorrect interpretation of a result;
+* incorrect user input;
+* using a result without prior verification;
+* software malfunction.
+
+For any use requiring a high degree of accuracy, results should be verified using another method or an appropriate tool.
 
 ## 7. Intellectual Property
 
-The software, source code, documentation and associated elements remain subject to the rights of their respective authors and contributors.
+The Calculator software, source code, documentation and associated elements are protected by the rights applicable to their respective authors and contributors.
 
-No intellectual property rights are transferred merely through the use of the software.
+Unless expressly authorized, the user may not present the software or its components as their own creation.
 
-## 8. Changes
+The rights granted to the user are limited to those expressly provided by the license applicable to the project.
 
-Queris Studio reserves the right to modify, improve or discontinue development of the software.
+## 8. Changes to the Terms of Use
 
-These Terms of Use may also be updated to reflect changes to the project.
+Queris Studio may modify these Terms of Use to reflect changes to the software, its features or its operation.
 
-Any modification to these Terms of Use is added to the **Modification History** and receives an identifier using the **Modification YYYY-NN** format, according to the system defined at the beginning of this document.
+When a rule is added or modified, a modification identifier may be placed **directly above the relevant rule or section**.
+
+The format used is:
+
+**Modification YYYY-NN**
+
+where:
+
+* **YYYY** represents the year of the modification;
+* **NN** represents the number of the modification made during that year.
+
+For example:
+
+* `Modification 2026-01` = first modification of 2026;
+* `Modification 2026-02` = second modification of 2026;
+* `Modification 2027-01` = first modification of 2027.
+
+The counter starts again at **01 at the beginning of each new year**.
+
+The date displayed below the modification number corresponds to the date on which the modification was published.
 
 ## 9. Support and Contact
 
@@ -204,3 +253,5 @@ For support, bug reports or project-related contact:
 ## 10. Acceptance
 
 Using Calculator constitutes acceptance of these Terms of Use.
+
+If an amendment to the Terms of Use is published, users are encouraged to review the updated version before continuing to use the software.
