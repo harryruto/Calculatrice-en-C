@@ -2,9 +2,9 @@
 
 ## Calculator
 
-**Version : 2.1**
-**Date : 1 septembre 2026**
-**Éditeur : Queris Studio — Harryruto**
+* **Version : 3.0**
+* **Date : 1 septembre 2026**
+* **Éditeur : Queris Studio — Harryruto**
 
 ---
 
