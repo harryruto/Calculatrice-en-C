@@ -2,10 +2,10 @@
 
 ## Calculator
 
-**Version:** 2.1
-**Release Date:** September 1, 2026
-**Type:** Console Application
-**Language:** C
+* **Version:** 2.1
+* **Release Date:** September 1, 2026
+* **Type:** Console Application
+* **Language:** C
 
 ---
 
