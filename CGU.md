@@ -80,8 +80,8 @@ Les présentes conditions peuvent également être mises à jour afin de reflét
 
 Pour obtenir de l’aide, signaler un problème ou contacter l’équipe du projet :
 
-**Discord officiel :** https://discord.gg/sgVApZ8eva
-**Contact :** harryruto
+* **Discord officiel :** https://discord.gg/sgVApZ8eva
+* **Contact :** harryruto
 
 ### 10. Acceptation
 
@@ -161,8 +161,8 @@ These Terms of Use may also be updated to reflect changes to the project.
 
 For support, bug reports or project-related contact:
 
-**Official Discord:** https://discord.gg/sgVApZ8eva
-**Contact:** harryruto
+* **Official Discord:** https://discord.gg/sgVApZ8eva
+* **Contact:** harryruto
 
 ### 10. Acceptance
 
