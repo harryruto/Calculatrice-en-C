@@ -11,7 +11,14 @@ int main() {
 
     FILE* error = fopen("error.logfile", "a+");
 
+    printf("Do you accept the T&C\n");
+    int accept = 0;
 
+    printf("1. Yes\n");
+    printf("2. No\n\n");
+    scanf("%d", &accept);
+
+    if (accept == 1) {
     printf("What language you speak / Quelle langue parlez-vous ?\n");
     printf("1. English\n");
     printf("2. Francais\n");
@@ -138,11 +145,12 @@ int main() {
             FILE* fichier = fopen("log.logfile", "a+");
             if (fichier != NULL) {
                 if (choice != 5 && choice != 9 && choice != ERROR && result != ERROR) {
-                    fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : %.2f - Result = %.2f", choice, number1, number2, result);
+                    fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : %.2f - Result = %.2f\n", choice, number1, number2, result);
                 } else if (result == ERROR || choice == ERROR) {
-                    fprintf(fichier, "\n[LOG] Invalid operation");
+                    fprintf(fichier, "[LOG] Invalid operation\n");
+                    fprintf(error, "[ERROR] Invalid operation\n");
                 } else {
-                    fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f", choice, number1, result);
+                    fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f\n", choice, number1, result);
                 }
                 fclose(fichier);
             } else {
@@ -153,7 +161,7 @@ int main() {
                     fprintf(error, "[ERROR] Log file uncharged\n");
                 } else {
                     color(12, 0);
-                    printf("\n[ERROR]Error file uncharged");
+                    printf("[ERROR]Error file uncharged\n");
                     color(15, 0);
                 }
             }
@@ -286,11 +294,12 @@ int main() {
             FILE* fichier = fopen("log.logfile", "a+");
             if (fichier != NULL) {
                 if (choice != 5 && choice != 9 && choice != ERROR && result != ERROR) {
-                    fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : %.2f - Result = %.2f", choice, number1, number2, result);
+                    fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : %.2f - Result = %.2f\n", choice, number1, number2, result);
                 } else if (result == ERROR || choice == ERROR) {
-                    fprintf(fichier, "\n[LOG] Invalid operation");
+                    fprintf(fichier, "[LOG] Invalid operation\n");
+                    fprintf(error, "[ERROR] Invalid operation\n");
                 } else {
-                    fprintf(fichier, "\n[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f", choice, number1, result);
+                    fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f\n", choice, number1, result);
                 }
                 fclose(fichier);
             } else {
@@ -301,7 +310,7 @@ int main() {
                     fprintf(error, "[ERROR] Log file uncharged\n");
                 } else {
                     color(12, 0);
-                    printf("\n[ERREUR] Fichier d'erreur non chargé");
+                    printf("[ERREUR] Fichier d'erreur non charge\n");
                     color(15, 0);
                 }
             }
@@ -320,6 +329,10 @@ int main() {
     }
     fclose(error);
     return 0;
+    } else {
+     fprintf(error, "[ERROR] Terms and conditions don't accepted\n");
+     return 0;
+    }
 }
 
 
