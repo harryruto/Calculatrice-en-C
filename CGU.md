@@ -8,205 +8,113 @@
 
 ---
 
-## 1. Objet / Purpose
+# 🇫🇷 Français
 
-### Français
+## 1. Objet
 
-Les présentes Conditions Générales d’Utilisation définissent les règles applicables à l’utilisation du logiciel **Calculator**.
+Ces Conditions Générales d’Utilisation (CGU) définissent les règles d’utilisation du logiciel **Calculator**, une application de calcul en ligne de commande développée en C.
 
-Calculator est une application en console développée en **C**. Le programme propose plusieurs opérations mathématiques et utilise une librairie mathématique externe pour certaines fonctions.
+Calculator permet notamment d’effectuer des opérations mathématiques telles que :
 
-### English
+* Addition
+* Soustraction
+* Multiplication
+* Division
+* Carré
+* Puissance
+* Racine carrée
+* Pourcentages
+* Calculs de surfaces
+* Théorème de Pythagore
 
-These Terms of Use define the rules applicable to the use of the **Calculator** software.
-
-Calculator is a **C** console application providing several mathematical operations and using an external mathematical library for some functions.
-
----
-
-## 2. Acceptation des conditions / Acceptance of the Terms
-
-### Français
-
-L’utilisation de Calculator implique l’acceptation des présentes CGU.
-
-L’utilisateur doit également prendre connaissance des documents du projet disponibles dans le dépôt, notamment :
-
-* `README.md`
-* `CODE_OF_CONDUCT.md`
-* `CONTRIBUTING.md`
-* le document relatif au signalement des bugs
-
-Ces documents complètent les informations et règles applicables au projet.
-
-### English
-
-Using Calculator implies acceptance of these Terms of Use.
-
-Users should also read the project documents available in the repository, including:
-
-* `README.md`
-* `CODE_OF_CONDUCT.md`
-* `CONTRIBUTING.md`
-* the project's bug-reporting document
-
-These documents provide additional information and rules applicable to the project.
+Le logiciel utilise également une bibliothèque mathématique externe pour certaines fonctions.
 
 ---
 
-## 3. Utilisation du logiciel / Software Usage
+## 2. Acceptation des conditions
 
-### Français
+En utilisant **Calculator**, l’utilisateur accepte les présentes Conditions Générales d’Utilisation.
 
-Calculator doit être utilisé de manière responsable et conformément à son objectif principal : effectuer des opérations mathématiques depuis une interface en console.
-
-Le logiciel permet notamment d'effectuer des additions, soustractions, multiplications, divisions, carrés, puissances, calculs d'aires, racines carrées, calculs de pourcentages et le théorème de Pythagore.
-
-L’utilisateur est responsable des données qu’il saisit et de l’utilisation qu’il fait des résultats fournis par le logiciel.
-
-### English
-
-Calculator must be used responsibly and according to its main purpose: performing mathematical operations through a console interface.
-
-The software provides operations including addition, subtraction, multiplication, division, squares, powers, area calculations, square roots, percentage calculations, and the Pythagorean theorem.
-
-Users are responsible for the data they enter and for how they use the results provided by the software.
+Si l’utilisateur n’accepte pas ces conditions, il ne doit pas utiliser le logiciel.
 
 ---
 
-## 4. Limitation de responsabilité / Limitation of Liability
+## 3. Utilisation du logiciel
 
-### Français
+Calculator est fourni comme un outil de calcul.
 
-Calculator est fourni **tel quel**, sans garantie concernant l’absence totale d’erreurs ou l’exactitude absolue de tous les résultats.
+L’utilisateur est responsable :
 
-Le logiciel contient des mécanismes de gestion de certaines erreurs, notamment pour les opérations invalides.
+* des valeurs qu’il saisit ;
+* de la vérification des résultats obtenus ;
+* de l’utilisation qu’il fait des résultats ;
+* du respect des lois et réglementations applicables.
 
-Les résultats doivent être vérifiés par l’utilisateur lorsqu’ils sont utilisés dans un contexte nécessitant une précision particulière.
-
-Le développeur et **Queris Studio** ne peuvent être tenus responsables des conséquences résultant d’une mauvaise utilisation du logiciel ou d’une interprétation incorrecte de ses résultats.
-
-### English
-
-Calculator is provided **as is**, without any guarantee that the software is completely error-free or that every result will always be perfectly accurate.
-
-The software includes error-handling mechanisms for certain invalid operations.
-
-Users should verify results when they are used in situations requiring particular accuracy.
-
-The developer and **Queris Studio** cannot be held responsible for consequences resulting from misuse of the software or incorrect interpretation of its results.
+Le logiciel ne doit pas être utilisé dans un contexte où une erreur de calcul pourrait entraîner des conséquences graves sans vérification indépendante des résultats.
 
 ---
 
-## 5. Fichiers de journalisation / Logging Files
+## 4. Limitation de responsabilité
 
-### Français
+Calculator est fourni **« en l’état »**.
 
-Calculator peut utiliser des fichiers locaux de journalisation, notamment :
+Aucune garantie n’est donnée concernant :
+
+* l’absence totale d’erreurs ;
+* la disponibilité permanente du logiciel ;
+* l’exactitude absolue de tous les résultats ;
+* la compatibilité avec tous les systèmes.
+
+Le développeur et **Queris Studio** ne peuvent être tenus responsables des conséquences résultant de l’utilisation du logiciel ou d’une mauvaise interprétation de ses résultats.
+
+---
+
+## 5. Fichiers de journalisation
+
+Calculator peut créer localement des fichiers de journalisation, notamment :
 
 * `log.logfile`
 * `error.logfile`
 
-Ces fichiers servent notamment à conserver des informations relatives aux opérations ou aux erreurs rencontrées pendant l’exécution du programme.
+Ces fichiers peuvent contenir des informations relatives aux opérations effectuées et aux erreurs rencontrées par le programme.
 
-L’utilisateur doit être conscient que ces fichiers peuvent contenir des informations correspondant aux opérations effectuées dans le programme.
-
-### English
-
-Calculator may use local logging files, including:
-
-* `log.logfile`
-* `error.logfile`
-
-These files are used to record information related to operations or errors encountered while the program is running.
-
-Users should be aware that these files may contain information corresponding to operations performed in the program.
+L’utilisateur est responsable de la conservation et de la gestion de ces fichiers sur son appareil.
 
 ---
 
-## 6. Erreurs de calcul / Calculation Errors
+## 6. Erreurs de calcul
 
-### Français
+Le logiciel possède des mécanismes permettant de détecter certaines erreurs, notamment :
 
-Certaines opérations disposent de contrôles spécifiques.
+* les divisions par zéro ;
+* les racines carrées de nombres négatifs ;
+* certaines erreurs internes signalées par le programme.
 
-Par exemple, le programme empêche une division par zéro et utilise une valeur d’erreur lorsque l’opération ne peut pas être effectuée.
+Cependant, ces mécanismes ne garantissent pas la détection de toutes les erreurs possibles.
 
-Le fonctionnement exact des contrôles dépend de l’implémentation du programme.
-
-### English
-
-Some operations include specific validation checks.
-
-For example, the program prevents division by zero and uses an error value when an operation cannot be performed.
-
-The exact behavior of these checks depends on the implementation of the program.
+Les résultats importants doivent donc être vérifiés indépendamment.
 
 ---
 
-## 7. Librairie externe / External Library
+## 7. Propriété intellectuelle
 
-### Français
+Le logiciel **Calculator**, son code source, sa documentation et ses éléments associés sont protégés par les droits applicables.
 
-Calculator utilise une librairie mathématique externe appelée **Math-Librairy-for-C** pour certaines fonctions mathématiques.
+Certaines fonctions mathématiques utilisées par Calculator proviennent de la bibliothèque externe **Math-Librairy-for-C**.
 
-La documentation du projet indique que le programme principal gère notamment l’interface, les entrées, les contrôles, l’affichage et les logs, tandis que la librairie externe regroupe certaines fonctions mathématiques.
+La bibliothèque externe est disponible sur GitHub :
 
-Les conditions, licences et règles propres à cette librairie peuvent être différentes de celles de Calculator.
+[Math-Librairy-for-C](https://github.com/harryruto/Math-Librairy-for-C?utm_source=chatgpt.com)
 
-### English
-
-Calculator uses an external mathematical library called **Math-Librairy-for-C** for certain mathematical functions.
-
-The project documentation states that the main program handles the interface, inputs, validation, display, and logging, while the external library contains certain mathematical functions.
-
-The terms, licenses, and rules applicable to this library may differ from those of Calculator.
+Les conditions d’utilisation et droits associés aux ressources externes doivent être respectés.
 
 ---
 
-## 8. Propriété intellectuelle / Intellectual Property
+## 8. Modifications du logiciel et des conditions
 
-### Français
+Le développeur peut modifier, améliorer ou mettre à jour Calculator ainsi que les présentes CGU.
 
-Le code, les éléments graphiques, la documentation et les autres éléments créés spécifiquement pour Calculator restent soumis aux droits de leurs auteurs respectifs.
-
-L’utilisation, la modification ou la redistribution du projet doit respecter les fichiers de licence et les crédits présents dans le dépôt.
-
-Tout code ou ressource provenant d’un projet externe doit également respecter les conditions de sa source d’origine.
-
-### English
-
-The code, graphics, documentation, and other elements specifically created for Calculator remain subject to the rights of their respective authors.
-
-Any use, modification, or redistribution of the project must comply with the license files and credits provided in the repository.
-
-Any code or resource originating from an external project must also comply with the terms of its original source.
-
----
-
-## 9. Communauté et contributions / Community and Contributions
-
-### Français
-
-Toute personne participant au projet doit respecter le `CODE_OF_CONDUCT.md`.
-
-Les contributions au projet doivent respecter les indications du `CONTRIBUTING.md`.
-
-Les bugs doivent être signalés en suivant la procédure indiquée dans le document prévu à cet effet.
-
-### English
-
-Anyone participating in the project must follow `CODE_OF_CONDUCT.md`.
-
-Contributions to the project must follow the guidelines described in `CONTRIBUTING.md`.
-
-Bugs should be reported according to the procedure described in the project's bug-reporting document.
-
----
-
-## 10. Modifications des CGU / Changes to the Terms
-
-Les modifications des présentes CGU sont identifiées directement au-dessus de la règle ou du texte concerné.
+Lorsqu’une règle des CGU est ajoutée ou modifiée, une indication de modification est placée directement au-dessus de la règle concernée.
 
 Le format utilisé est :
 
@@ -215,61 +123,199 @@ Le format utilisé est :
 **Date : DD month YYYY**
 ```
 
-* `YYYY` correspond à l’année de la modification.
-* `NN` correspond au numéro séquentiel de la modification durant cette année.
-* Le compteur recommence à `01` au début de chaque nouvelle année.
+`YYYY` correspond à l’année et `NN` au numéro de modification de cette année.
 
-Lorsqu’une règle existante est modifiée, une nouvelle identification de modification est ajoutée directement au-dessus de la règle concernée.
+Le compteur recommence à **01** au début de chaque nouvelle année.
 
-Lorsqu’une nouvelle règle est ajoutée, son identification de modification est également placée directement au-dessus de celle-ci.
+---
 
-### English
+## 9. Documentation et contribution
 
-Changes to these Terms are identified directly above the affected rule or text.
+Pour obtenir davantage d'informations sur le projet, son fonctionnement et les règles de contribution, l’utilisateur peut consulter les fichiers correspondants du dépôt.
 
-The format used is:
+### Modification 2026-02
+
+**Date : 17 septembre 2026**
+
+Pour les informations complémentaires, veuillez consulter notamment :
+
+* `README.md` — présentation du projet
+* `CODE_OF_CONDUCT.md` — code de conduite
+* `CONTRIBUTING.md` — règles de contribution
+* `BUG_REPORTING.md` — procédure de signalement des bugs
+* `CREDITS.md` — crédits du projet
+
+---
+
+## 10. Support et contact
+
+Pour toute question concernant Calculator, le développement du projet ou son utilisation, il est possible de contacter le développeur :
+
+**Harryruto — Queris Studio**
+
+Le serveur Discord officiel peut également être utilisé pour obtenir de l'aide ou échanger autour du projet.
+
+---
+
+## 11. Acceptation
+
+L’utilisation de Calculator implique l’acceptation des présentes Conditions Générales d’Utilisation.
+
+Les présentes conditions peuvent être modifiées afin de refléter l’évolution du logiciel et du projet.
+
+---
+
+# 🇬🇧 English
+
+## 1. Purpose
+
+These Terms of Use define the rules for using **Calculator**, a C-based command-line calculator application.
+
+Calculator can perform mathematical operations including:
+
+* Addition
+* Subtraction
+* Multiplication
+* Division
+* Square
+* Power
+* Square root
+* Percentages
+* Area calculations
+* Pythagorean theorem
+
+The software also uses an external mathematical library for some functions.
+
+---
+
+## 2. Acceptance of the Terms
+
+By using **Calculator**, the user accepts these Terms of Use.
+
+If the user does not agree with these terms, they must not use the software.
+
+---
+
+## 3. Software Usage
+
+Calculator is provided as a calculation tool.
+
+The user is responsible for:
+
+* the values they enter;
+* checking the results obtained;
+* how they use the results;
+* complying with applicable laws and regulations.
+
+The software must not be used in situations where a calculation error could have serious consequences without independently verifying the results.
+
+---
+
+## 4. Limitation of Liability
+
+Calculator is provided **“as is”**.
+
+No guarantee is made regarding:
+
+* complete absence of errors;
+* permanent availability of the software;
+* absolute accuracy of all results;
+* compatibility with every system.
+
+The developer and **Queris Studio** cannot be held responsible for consequences resulting from the use of the software or the incorrect interpretation of its results.
+
+---
+
+## 5. Logging Files
+
+Calculator may create local logging files, including:
+
+* `log.logfile`
+* `error.logfile`
+
+These files may contain information related to performed operations and errors encountered by the program.
+
+The user is responsible for managing and storing these files on their device.
+
+---
+
+## 6. Calculation Errors
+
+The software includes mechanisms for detecting certain errors, including:
+
+* division by zero;
+* square roots of negative numbers;
+* certain internal errors reported by the program.
+
+However, these mechanisms do not guarantee that every possible error will be detected.
+
+Important results should therefore be independently verified.
+
+---
+
+## 7. Intellectual Property
+
+The **Calculator** software, its source code, documentation and associated elements are protected by applicable rights.
+
+Some mathematical functions used by Calculator come from the external **Math-Librairy-for-C** library.
+
+The external library is available on GitHub:
+
+[Math-Librairy-for-C](https://github.com/harryruto/Math-Librairy-for-C?utm_source=chatgpt.com)
+
+The terms of use and rights associated with external resources must be respected.
+
+---
+
+## 8. Changes to the Software and Terms
+
+The developer may modify, improve or update Calculator and these Terms of Use.
+
+Whenever a rule in these Terms is added or modified, a modification notice is placed directly above the affected rule.
+
+The following format is used:
 
 ```text
 ### Modification YYYY-NN
 **Date: DD month YYYY**
 ```
 
-* `YYYY` represents the year of the modification.
-* `NN` represents the sequential modification number for that year.
-* The counter resets to `01` at the beginning of each new year.
+`YYYY` represents the year and `NN` represents the modification number for that year.
 
-When an existing rule is modified, a new modification identifier is added directly above the affected rule.
-
-When a new rule is added, its modification identifier is also placed directly above it.
+The counter resets to **01** at the beginning of each new year.
 
 ---
 
-## 11. Support et contact / Support and Contact
+## 9. Documentation and Contribution
 
-### Français
+For additional information about the project, its operation and contribution rules, users can consult the corresponding files in the repository.
 
-Pour toute question concernant Calculator, les utilisateurs peuvent contacter le mainteneur du projet :
+### Modification 2026-02
 
-**Harryruto — Queris Studio**
+**Date: September 17, 2026**
 
-Pour les contributions, les bugs et les problèmes liés au projet, il est recommandé de consulter les documents correspondants du dépôt avant de contacter le mainteneur.
+For additional information, please consult:
 
-### English
-
-For questions regarding Calculator, users may contact the project maintainer:
-
-**Harryruto — Queris Studio**
-
-For contributions, bugs, or project-related issues, users should consult the corresponding repository documents before contacting the maintainer.
+* `README.md` — project overview
+* `CODE_OF_CONDUCT.md` — code of conduct
+* `CONTRIBUTING.md` — contribution guidelines
+* `BUG_REPORTING.md` — bug reporting procedure
+* `CREDITS.md` — project credits
 
 ---
 
-## 12. Acceptation / Acceptance
+## 10. Support and Contact
 
-### Français
+For questions regarding Calculator, the development of the project or its use, users may contact the developer:
 
-En utilisant Calculator, l’utilisateur reconnaît avoir pris connaissance des présentes Conditions Générales d’Utilisation et accepte de les respecter.
+**Harryruto — Queris Studio**
 
-### English
+The official Discord server may also be used to request help or discuss the project.
 
-By using Calculator, the user acknowledges that they have read these Terms of Use and agrees to comply with them.
+---
+
+## 11. Acceptance
+
+Using Calculator means that the user accepts these Terms of Use.
+
+These terms may be modified to reflect changes to the software and the project.
