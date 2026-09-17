@@ -2,9 +2,9 @@
 
 ## Calculator
 
-* **Version :** 2.1
-* **Date de publication initiale :** 1 septembre 2026
-* **Dernière modification :** 17 septembre 2026
+* **Version :** 3.0
+* **Date de publication initiale :** 10 septembre 2026
+* **Dernière modification des CGU:** 17 septembre 2026
 
 ---
 
