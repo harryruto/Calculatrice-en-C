@@ -45,7 +45,8 @@ int main()
                 printf("11. Percentage\n");
                 printf("12. Pythagoras Theorem\n\n");
                 color(13, 0);
-                printf("13. Source Code\n\n");
+                printf("13. Source Code\n");
+                printf("14. History\n\n");
                 color(15, 0);
                 scanf("%d", &choice);
 
@@ -169,6 +170,12 @@ int main()
                         system("start https://github.com/harryruto/Calculatrice-en-C");
                         break;
 
+                    case 14:
+                        color(12, 0);
+                        printf("In dev\n");
+                        color(15, 0);
+                        break;
+
                     default:
                         color(12, 0);
                         printf("Invalid choice.\n");
@@ -179,20 +186,21 @@ int main()
 
                 if (fichier != NULL)
                 {
-                    if (choice != 5 && choice != 9 && choice != ERROR && result != ERROR)
+                    if (choice != 5 && choice != 9 && choice != ERROR && choice != 14 && choice != 13 && result != ERROR) {
                         fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : %.2f - Result = %.2f\n", choice, number1, number2, result);
+                    }
                     else if (result == ERROR || choice == ERROR)
                     {
                         fprintf(fichier, "[LOG] Invalid operation\n");
                         fprintf(error, "[ERROR] Invalid operation\n");
                     }
-                    else if (choice == 13) {
-                        fprintf(fichier, "[LOG] Show code\n");
+                    else if (choice == 13 || choice == 14) {
+                        fprintf(fichier, "[LOG] Debug\n");
                     }
-                    else
+                    else {
                         fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f\n", choice, number1, result);
 
-                    fclose(fichier);
+                    }
                 }
                 else
                 {
@@ -200,8 +208,9 @@ int main()
                     printf("[ERROR] Log file uncharged\n");
                     color(15, 0);
 
-                    if (error != NULL)
+                    if (error != NULL) {
                         fprintf(error, "[ERROR] Log file uncharged\n");
+                    }
                     else
                     {
                         color(12, 0);
@@ -237,17 +246,18 @@ int main()
                 printf("11. Pourcentage\n");
                 printf("12. Theoreme de Pythagore\n\n");
                 color(13, 0);
-                printf("13. Code Source\n\n");
+                printf("13. Code Source\n");
+                printf("14. Historique\n\n");
                 color(15, 0);
                 scanf("%d", &choice);
 
-                if (choice != 10 && choice != 13)
+                if (choice != 10 && choice != 13 && choice != 14)
                 {
                     printf("Nombre 1 :\n");
                     scanf("%lf", &number1);
                 }
 
-                if (choice != 5 && choice != 9 && choice != 10 && choice != 13)
+                if (choice != 5 && choice != 9 && choice != 10 && choice != 13 && choice != 14)
                 {
                     printf("Nombre 2 :\n");
                     scanf("%lf", &number2);
@@ -361,6 +371,12 @@ int main()
                         system("start https://github.com/harryruto/Calculatrice-en-C");
                         break;
 
+                    case 14:
+                        color(12, 0);
+                            printf("En devellopement\n");
+                            color(15, 0);
+                        break;
+
                     default:
                         color(12, 0);
                         printf("Choix invalide.\n");
@@ -371,20 +387,20 @@ int main()
 
                 if (fichier != NULL)
                 {
-                    if (choice != 5 && choice != 9 && choice != ERROR && choice != 13 && result != ERROR)
+                    if (choice != 5 && choice != 9 && choice != ERROR && choice != 13 && choice != 14 && result != ERROR) {
                         fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : %.2f - Result = %.2f\n", choice, number1, number2, result);
+                    }
                     else if (result == ERROR || choice == ERROR)
                     {
                         fprintf(fichier, "[LOG] Invalid operation\n");
                         fprintf(error, "[ERROR] Invalid operation\n");
                     }
-                    else if (choice == 13) {
-                        fprintf(fichier, "[LOG] Show code\n");
+                    else if (choice == 13 || choice == 14) {
+                        fprintf(fichier, "[LOG] Debug\n");
                     }
-                    else
+                    else {
                         fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f\n", choice, number1, result);
-
-                    fclose(fichier);
+                    }
                 }
                 else
                 {
@@ -392,8 +408,9 @@ int main()
                     printf("Fichier de log non charge\n");
                     color(15, 0);
 
-                    if (error != NULL)
+                    if (error != NULL) {
                         fprintf(error, "[ERROR] Log file uncharged\n");
+                    }
                     else
                     {
                         color(12, 0);
@@ -416,15 +433,14 @@ int main()
             printf("Choix invalide / Invalid choice\n");
             color(15, 0);
         }
-
-        fclose(error);
-        return 0;
     }
     else
     {
         system("start https://github.com/harryruto/Calculatrice-en-C/blob/main/Informations/CGU.md");
         fprintf(error, "[ERROR] Terms and conditions don't accepted\n");
-        return 0;
     }
+    fclose(fichier);
+    fclose(error);
+    return 0;
 }
 
