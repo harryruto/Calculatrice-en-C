@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "math.h"
@@ -50,13 +49,13 @@ int main()
                 color(15, 0);
                 scanf("%d", &choice);
 
-                if (choice != 10 && choice != 13)
+                if (choice != 10 && choice != 13 && choice != 14)
                 {
                     printf("Number 1:\n");
                     scanf("%lf", &number1);
                 }
 
-                if (choice != 5 && choice != 9 && choice != 10 && choice != 13)
+                if (choice != 5 && choice != 9 && choice != 10 && choice != 13 && choice != 14)
                 {
                     printf("Number 2:\n");
                     scanf("%lf", &number2);
@@ -171,9 +170,15 @@ int main()
                         break;
 
                     case 14:
-                        color(12, 0);
-                        printf("In dev\n");
-                        color(15, 0);
+                        char log[100];
+                        fseek(fichier, 0, SEEK_END);
+                        fseek(fichier, -77, SEEK_CUR);
+                        fgets(log, 77, fichier);
+
+                       color(13, 0);
+                        printf("%s", log);
+                         color(15, 0);
+
                         break;
 
                     default:
@@ -193,9 +198,6 @@ int main()
                     {
                         fprintf(fichier, "[LOG] Invalid operation\n");
                         fprintf(error, "[ERROR] Invalid operation\n");
-                    }
-                    else if (choice == 13 || choice == 14) {
-                        fprintf(fichier, "[LOG] Debug\n");
                     }
                     else {
                         fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f\n", choice, number1, result);
@@ -372,9 +374,14 @@ int main()
                         break;
 
                     case 14:
-                        color(12, 0);
-                            printf("En devellopement\n");
-                            color(15, 0);
+                        char log[100];
+                        fseek(fichier, 0, SEEK_END);
+                        fseek(fichier, -77, SEEK_CUR);
+                        fgets(log, 77, fichier);
+
+                        color(13, 0);
+                        printf("%s", log);
+                         color(15, 0);
                         break;
 
                     default:
@@ -394,9 +401,6 @@ int main()
                     {
                         fprintf(fichier, "[LOG] Invalid operation\n");
                         fprintf(error, "[ERROR] Invalid operation\n");
-                    }
-                    else if (choice == 13 || choice == 14) {
-                        fprintf(fichier, "[LOG] Debug\n");
                     }
                     else {
                         fprintf(fichier, "[LOG] Operation : %d - Number 1 : %.2f - Number 2 : NULL - Result = %.2f\n", choice, number1, result);
