@@ -1,4 +1,4 @@
-# 🧮 Calculatrice / Calculatrice V2.0.2
+# 🧮 Calculatrice / Calculatrice V3.0.4
 
 [Français](#-français) | [Anglais](#-anglais)
 
