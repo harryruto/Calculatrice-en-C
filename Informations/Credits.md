@@ -2,7 +2,7 @@
 
 ## Calculator
 
-* **Version:** 2.1
+* **Version:** 3.0.4
 * **Release Date:** September 1, 2026
 * **Type:** Console Application
 * **Language:** C
