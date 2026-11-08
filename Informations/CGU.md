@@ -2,15 +2,15 @@
 
 ## Calculator
 
-`Version : 3.1
-Date de publication initiale : 10 septembre 2026
-Dernière modification des CGU : 8 novembre 2026`
+`- Version : 3.1
+- Date de publication initiale : 10 septembre 2026
+- Dernière modification des CGU : 8 novembre 2026`
 
 🇫🇷 Français
 
 ---
 
-1. Objet
+### 1. Objet
 
 Ces Conditions Générales d’Utilisation (CGU) définissent les règles d’utilisation du logiciel Calculator, une application de calcul en ligne de commande développée en C.
 
@@ -29,13 +29,13 @@ Calculator permet notamment d’effectuer des opérations mathématiques telles 
 
 Le logiciel utilise également une bibliothèque mathématique externe pour certaines fonctions.
 
-2. Acceptation des conditions
+### 2. Acceptation des conditions
 
 En utilisant Calculator, l’utilisateur accepte les présentes Conditions Générales d’Utilisation.
 
 Si l’utilisateur n’accepte pas ces conditions, il ne doit pas utiliser le logiciel.
 
-3. Utilisation du logiciel
+### 3. Utilisation du logiciel
 
 Calculator est fourni comme un outil de calcul.
 
@@ -48,7 +48,7 @@ L’utilisateur est responsable :
 
 Le logiciel ne doit pas être utilisé dans un contexte où une erreur de calcul pourrait entraîner des conséquences graves sans vérification indépendante des résultats.
 
-4. Limitation de responsabilité
+### 4. Limitation de responsabilité
 
 Calculator est fourni « en l’état ».
 
@@ -61,18 +61,18 @@ Aucune garantie n’est donnée concernant :
 
 Le développeur et Queris Studio ne peuvent être tenus responsables des conséquences résultant de l’utilisation du logiciel ou d’une mauvaise interprétation de ses résultats, dans les limites autorisées par la législation applicable.
 
-5. Fichiers de journalisation
+### 5. Fichiers de journalisation
 
 Calculator peut créer localement des fichiers de journalisation, notamment :
 
-- "log.logfile"
-- "error.logfile"
+- `log.logfile`
+- `error.logfile`
 
 Ces fichiers peuvent contenir des informations relatives aux opérations effectuées et aux erreurs rencontrées par le programme.
 
 L’utilisateur est responsable de la conservation et de la gestion de ces fichiers sur son appareil.
 
-6. Erreurs de calcul
+### 6. Erreurs de calcul
 
 Le logiciel possède des mécanismes permettant de détecter certaines erreurs, notamment :
 
@@ -84,7 +84,7 @@ Cependant, ces mécanismes ne garantissent pas la détection de toutes les erreu
 
 Les résultats importants doivent donc être vérifiés indépendamment.
 
-7. Licence, modification et redistribution
+### 7. Licence, modification et redistribution
 
 Calculator étant un logiciel open-source, son code source peut être consulté, utilisé, modifié et redistribué conformément aux conditions de sa licence applicable.
 
@@ -107,7 +107,7 @@ Toute personne redistribuant une version du logiciel doit veiller à ce que ce c
 
 Ces dispositions doivent être interprétées conformément à la licence open-source effectivement associée au code source de Calculator. En cas de contradiction, les dispositions de cette licence prévalent pour les droits qu'elle régit.
 
-8. Modifications du logiciel et des conditions
+### 8. Modifications du logiciel et des conditions
 
 Le développeur peut modifier, améliorer ou mettre à jour Calculator ainsi que les présentes CGU.
 
@@ -123,7 +123,7 @@ YYYY correspond à l'année et NN au numéro de modification de cette année.
 
 Le compteur recommence à 01 au début de chaque nouvelle année.
 
-9. Documentation et contribution
+### 9. Documentation et contribution
 
 Pour obtenir davantage d'informations sur le projet, son fonctionnement et les règles de contribution, l'utilisateur peut consulter les fichiers correspondants du dépôt.
 
@@ -139,7 +139,7 @@ Pour les informations complémentaires, veuillez consulter notamment :
 - "BUG_REPORT.md" — procédure de signalement des bugs
 - "CREDITS.md" — crédits du projet
 
-10. Support et contact
+### 10. Support et contact
 
 Pour toute question concernant Calculator, le développement du projet ou son utilisation, il est possible de contacter le développeur :
 
@@ -147,7 +147,7 @@ Harryruto — Queris Studio
 
 Le serveur Discord officiel peut également être utilisé pour obtenir de l'aide ou échanger autour du projet.
 
-11. Acceptation
+### 11. Acceptation
 
 L'utilisation de Calculator implique l'acceptation des présentes Conditions Générales d'Utilisation.
 
@@ -155,19 +155,19 @@ Les présentes conditions peuvent être modifiées afin de refléter l'évolutio
 
 ---
 
-TERMS OF USE
+# TERMS OF USE
 
-Calculator
+## Calculator
 
-Version: 3.1
-Initial publication date: September 10, 2026
-Last modification of the Terms: November 8, 2026
+`- Version: 3.1
+- Initial publication date: September 10, 2026
+- Last modification of the Terms: November 8, 2026`
 
-🇬🇧 English
+## 🇬🇧 English
 
 ---
 
-1. Purpose
+### 1. Purpose
 
 These Terms of Use define the rules for using Calculator, a C-based command-line calculator application.
 
@@ -186,13 +186,13 @@ Calculator can perform mathematical operations including:
 
 The software also uses an external mathematical library for some functions.
 
-2. Acceptance of the Terms
+### 2. Acceptance of the Terms
 
 By using Calculator, the user accepts these Terms of Use.
 
 If the user does not agree with these terms, they must not use the software.
 
-3. Software Usage
+### 3. Software Usage
 
 Calculator is provided as a calculation tool.
 
@@ -205,7 +205,7 @@ The user is responsible for:
 
 The software must not be used in situations where a calculation error could have serious consequences without independently verifying the results.
 
-4. Limitation of Liability
+### 4. Limitation of Liability
 
 Calculator is provided "as is".
 
@@ -218,7 +218,7 @@ No guarantee is made regarding:
 
 The developer and Queris Studio cannot be held responsible for consequences resulting from the use of the software or the incorrect interpretation of its results, to the extent permitted by applicable law.
 
-5. Logging Files
+### 5. Logging Files
 
 Calculator may create local logging files, including:
 
@@ -229,7 +229,7 @@ These files may contain information related to performed operations and errors e
 
 The user is responsible for managing and storing these files on their device.
 
-6. Calculation Errors
+### 6. Calculation Errors
 
 The software includes mechanisms for detecting certain errors, including:
 
@@ -241,7 +241,7 @@ However, these mechanisms do not guarantee that every possible error will be det
 
 Important results should therefore be independently verified.
 
-7. License, Modification and Redistribution
+### 7. License, Modification and Redistribution
 
 As Calculator is open-source software, its source code may be viewed, used, modified and redistributed in accordance with the terms of its applicable license.
 
@@ -264,7 +264,7 @@ Anyone redistributing a version of the software must ensure that this credit rem
 
 These provisions must be interpreted in accordance with the open-source license actually associated with Calculator's source code. In the event of a conflict, the terms of that license prevail with respect to the rights it governs.
 
-8. Changes to the Software and Terms
+### 8. Changes to the Software and Terms
 
 The developer may modify, improve or update Calculator and these Terms of Use.
 
@@ -280,7 +280,7 @@ YYYY represents the year and NN represents the modification number for that year
 
 The counter resets to 01 at the beginning of each new year.
 
-9. Documentation and Contribution
+### 9. Documentation and Contribution
 
 For additional information about the project, its operation and contribution rules, users can consult the corresponding files in the repository.
 
@@ -296,7 +296,7 @@ For additional information, please consult:
 - "BUG_REPORT.md" — bug reporting procedure
 - "CREDITS.md" — project credits
 
-10. Support and Contact
+### 10. Support and Contact
 
 For questions regarding Calculator, the development of the project or its use, users may contact the developer:
 
@@ -304,7 +304,7 @@ Harryruto — Queris Studio
 
 The official Discord server may also be used to request help or discuss the project.
 
-11. Acceptance
+### 11. Acceptance
 
 Using Calculator means that the user accepts these Terms of Use.
 
