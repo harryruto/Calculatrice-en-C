@@ -2,11 +2,11 @@
 
 ## Calculator
 
-` - Version : 3.1
+- Version : 3.1
 - Date de publication initiale : 10 septembre 2026
-- Dernière modification des CGU : 8 novembre 2026`
+- Dernière modification des CGU : 8 novembre 2026
 
-🇫🇷 Français
+## 🇫🇷 Français
 
 ---
 
@@ -159,9 +159,9 @@ Les présentes conditions peuvent être modifiées afin de refléter l'évolutio
 
 ## Calculator
 
-`- Version: 3.1
+- Version: 3.1
 - Initial publication date: September 10, 2026
-- Last modification of the Terms: November 8, 2026`
+- Last modification of the Terms: November 8, 2026
 
 ## 🇬🇧 English
 
