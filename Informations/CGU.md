@@ -2,7 +2,7 @@
 
 ## Calculator
 
-`- Version : 3.1
+` - Version : 3.1
 - Date de publication initiale : 10 septembre 2026
 - Dernière modification des CGU : 8 novembre 2026`
 
